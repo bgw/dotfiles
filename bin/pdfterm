@@ -1,0 +1,29 @@
+#!/bin/sh
+# Console-based pdf reader (kinda crappy, but works in a pinch)
+# Requires some sort of console-based web browser
+
+BROWSER="w3m" # could be lynx, should accept as argument
+
+EMPH=`tput bold`
+END_EMPH=`tput sgr0`
+
+help() {
+    echo "Usage: $EMPH$0 my_pdf_file.pdf$END_EMPH"
+}
+
+if [ $# -ne 1 ]; then
+    echo "${EMPH}Error:$END_EMPH Too many or too few arguments."
+    help()
+    exit 1
+elif ([ "$1" = "-h" ] || [ "$1" = "--help" ]); then
+    help()
+    exit 0
+else PDF_FILE="$1"
+    TMP_DIR=`mktemp -d`
+    HTML_FILE="$TMP_DIR/`basename "$PDF_FILE" .pdf`.html"
+    
+    pdftohtml -i -c -s -noframes -nodrm "$1" "$HTML_FILE"
+    sh -c "$BROWSER $HTML_FILE"
+    
+    rm -rf "$TMP_DIR"
+fi
