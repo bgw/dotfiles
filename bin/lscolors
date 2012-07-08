@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# When we have 256 colors, this can be used to display them all
+# Call with -1 to use only one column in output
+COLOR_LISTING=""
+for i in `seq 0 255`; do
+    COLOR_LISTING="$COLOR_LISTING\x1b[38;5;${i}mcolour${i}\n"
+done
+if ( [ $# -eq 0 ] || [ $1 != "-1" ] ); then
+    printf "$COLOR_LISTING" | column
+else
+    printf "$COLOR_LISTING"
+fi
