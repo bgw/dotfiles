@@ -8,14 +8,15 @@ SIMPLE_FILES[1]="vimrc"
 SIMPLE_FILES[2]="zshrc"
 SIMPLE_FILES[3]="gitconfig"
 
-if ( [ $1 = "-d" ] || [ $1 = "--delete" ] ); then
-    echo "Warning: Removing old files"
+if [ $# -eq 1 ] && ( [ $1 = "-d" ] || [ $1 = "--delete" ] ); then
+    echo "Warning: Removing old install"
     rm -rf "$HOME/bin"
     rm -rf "$HOME/.vim"
 fi
 
 cp -r bin "$HOME"
 cp -r vim "$HOME/.vim"
-for FILE in $SIMPLE_FILES; do
+for FILE in ${SIMPLE_FILES[@]}; do
+    rm "$HOME/.$FILE"
     cp "$FILE" "$HOME/.$FILE"
 done
