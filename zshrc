@@ -82,12 +82,16 @@ alias evince="dbus-launch evince"
 export PATH="$HOME/Applications/android-ndk-r8:$PATH"
 
 # Debian VBox virtual machine
-debvm-start () {
+debvm-start() {
     echo "Once VM is booted, run: ssh debian_vm"
     VBoxHeadless -startvm 'Debian Squeeze (Minimal)'
 }
 
-debvm-cp () {
+debvm-stop() {
+    VBoxManage controlvm 'Debian Squeeze (Minimal)' acpipowerbutton
+}
+
+debvm-cp() {
     rsync -rtp --delete "$1" "debian_vm:$2"
 }
 
