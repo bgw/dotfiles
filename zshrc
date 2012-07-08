@@ -39,8 +39,8 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# Alias ~/bin
-export PATH="$HOME/bin:$PATH"
+# Alias ~/bin and ~/bin_local (for machine-local binaries)
+export PATH="$HOME/bin_local:$HOME/bin:$PATH"
 
 # Alias Sage and setup SageTeX
 export SAGE_ROOT=` \
@@ -90,3 +90,12 @@ debvm-start () {
 debvm-cp () {
     rsync -rtp --delete "$1" "debian_vm:$2"
 }
+
+# On the UF CISE servers, aliases for simple quota lookups
+if [ `hostname` = "storm" ] || [ `hostname` = "thunder" ]; then
+    export LOCAL_QUOTA="$(quota -vsw 2> /dev/null | grep woodruff | tail -n 1 |\
+                        tr -s " " "\012")"
+    export QUOTA_USAGE="$(echo $LOCAL_QUOTA | sed -n 2p)"
+    export QUOTA_TOTAL="$(echo $LOCAL_QUOTA | sed -n 3p)"
+    alias simplequota='echo "Using $QUOTA_USAGE out of $QUOTA_TOTAL."'
+fi
