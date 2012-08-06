@@ -3,6 +3,8 @@ filetype plugin on " custom language configuration
 
 " enable pathogen
 call pathogen#infect()
+" enable powerline
+set laststatus=2
 
 " handle indentation
 set autoindent
