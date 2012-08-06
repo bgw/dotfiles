@@ -1,6 +1,9 @@
 syntax on
 filetype plugin on " custom language configuration
 
+" enable pathogen
+call pathogen#infect()
+
 " handle indentation
 set autoindent
 set smartindent
