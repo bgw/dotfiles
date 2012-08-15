@@ -7,3 +7,6 @@
 [submodule "vim/bundle/coffeescript"]
 	path = vim/bundle/coffeescript
 	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/bundle/puppet"]
+	path = vim/bundle/puppet
+	url = git://github.com/rodjek/vim-puppet.git
