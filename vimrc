@@ -1,11 +1,11 @@
-syntax on
-filetype plugin on " custom language configuration
-
 " enable pathogen
 call pathogen#infect()
 " enable powerline
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
+
+syntax on
+filetype plugin on " custom language configuration
 
 " handle indentation
 set autoindent
