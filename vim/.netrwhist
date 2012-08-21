@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/pipeep/Documents/school/12_summer/acis_lab/svpn/svpn/src'
-let g:netrw_dirhist_2='/home/pipeep/Documents/school/12_summer/digital_logic/prelabs/lab4'
-let g:netrw_dirhist_3='/home/pipeep/Documents/school/12_summer/acis_lab/svpn/svpn/src_ac'
