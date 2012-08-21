@@ -18,7 +18,7 @@ set expandtab " use spaces in place of tabs
 " Give us a line at 80 columns
 set textwidth=80
 set colorcolumn=+1
-highlight ColorColumn ctermbg=DarkGray guibg=gray13
+highlight ColorColumn ctermbg=233
 
 " Let us use the mouse inside gnome-terminal
 set mouse=a
