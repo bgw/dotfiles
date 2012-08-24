@@ -16,7 +16,8 @@ fi
 
 cp -r bin "$HOME"
 cp -r vim "$HOME/.vim"
-cp fonts/* "$HOME/.fonts"
+mkdir -p "$HOME/.fonts"
+cp -r fonts/* "$HOME/.fonts"
 for FILE in ${SIMPLE_FILES[@]}; do
     rm "$HOME/.$FILE"
     cp "$FILE" "$HOME/.$FILE"
