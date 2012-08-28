@@ -63,8 +63,10 @@ export EDITOR=vim
 alias lynx="lynx -use_mouse"
 
 # shortcuts for school
-export SCHOOL_CUR="~/Documents/school/12_summer/"
-alias cdschool="cd $SCHOOL_CUR"
+export SCHOOL_CUR="~/Documents/school/12_fall/"
+cdschool () {
+    cd "$SCHOOL_CUR/$1"
+}
 
 # make my ls pretty and colorful!
 alias ls="ls --color=auto"
