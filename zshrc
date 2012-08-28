@@ -77,6 +77,14 @@ if [ $TERM = "xterm" ]; then
     export TERM=xterm-256color
 fi
 
+# shorter aptitude commands
+alias apti="aptitude install"
+alias aptr="aptitude remove"
+alias aptd=aptr
+alias apts="aptitude search"
+alias aptv="aptitude versions"
+alias aptu="aptitude update && aptitude safe-upgrade"
+
 # work around a bug with starting evince under tmux sometimes
 alias evince="dbus-launch evince"
 
