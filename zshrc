@@ -78,12 +78,12 @@ if [ $TERM = "xterm" ]; then
 fi
 
 # shorter aptitude commands
-alias apti="aptitude install"
-alias aptr="aptitude remove"
+alias apti="sudo aptitude install"
+alias aptr="sudo aptitude remove"
 alias aptd=aptr
 alias apts="aptitude search"
 alias aptv="aptitude versions"
-alias aptu="aptitude update && aptitude safe-upgrade"
+alias aptu="sudo aptitude update && sudo aptitude safe-upgrade"
 
 # work around a bug with starting evince under tmux sometimes
 alias evince="dbus-launch evince"
