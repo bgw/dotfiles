@@ -2,9 +2,15 @@
 call pathogen#infect()
 " enable powerline
 set laststatus=2
+let g:Powerline_colorscheme='skwp'
 let g:Powerline_symbols = 'fancy'
 
+set t_Co=256 " I like colors!
 syntax on
+set background=dark
+let g:solarized_termcolors=256
+"colorscheme solarized
+colorscheme jellybeans
 filetype plugin on " custom language configuration
 
 " handle indentation
@@ -18,7 +24,7 @@ set expandtab " use spaces in place of tabs
 " Give us a line at 80 columns
 set textwidth=80
 set colorcolumn=+1
-highlight ColorColumn ctermbg=233
+" highlight ColorColumn ctermbg=233
 
 " Let us use the mouse inside gnome-terminal
 set mouse=a
