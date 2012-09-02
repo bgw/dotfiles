@@ -71,6 +71,7 @@ cdschool () {
 
 # make my ls pretty and colorful!
 alias ls="ls --color=auto"
+alias sl=ls # yeah, I do this way too much
 
 if [ $TERM = "xterm" ]; then
     # Use 256 Colors! (in xterm and things that report themselves as xterm, like
