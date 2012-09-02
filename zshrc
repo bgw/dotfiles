@@ -114,3 +114,14 @@ if [ `hostname` = "storm" ] || [ `hostname` = "thunder" ]; then
     export QUOTA_TOTAL="$(echo $LOCAL_QUOTA | sed -n 3p)"
     alias simplequota='echo "Using $QUOTA_USAGE out of $QUOTA_TOTAL."'
 fi
+
+# define suffix aliases for files (default programs)
+alias -s tex="$EDITOR"
+alias -s md="$EDITOR"
+alias -s markdown="$EDITOR"
+alias -s rst="$EDITOR"
+alias -s css="$EDITOR"
+alias -s scss="$EDITOR"
+alias -s sass="$EDITOR"
+alias -s html=firefox
+alias -s pdf=evince
