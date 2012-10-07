@@ -40,3 +40,6 @@ command Utb UseTabs
 
 command UseSpaces set expandtab
 command Usp UseSpaces
+
+" Make vim more responsive when ESC is pressed
+set timeout timeoutlen=1000 ttimeoutlen=100
