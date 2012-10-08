@@ -43,3 +43,8 @@ command Usp UseSpaces
 
 " Make vim more responsive when ESC is pressed
 set timeout timeoutlen=1000 ttimeoutlen=100
+
+" Make searches highlighted
+set hlsearch " the default jellybeans coloring is fine for this
+" pressing space will disable search highlighting, and clear the message line
+nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
