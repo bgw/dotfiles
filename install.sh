@@ -19,6 +19,6 @@ cp -r vim "$HOME/.vim"
 mkdir -p "$HOME/.fonts"
 cp -r fonts/* "$HOME/.fonts"
 for FILE in ${SIMPLE_FILES[@]}; do
-    rm "$HOME/.$FILE"
+    rm -f "$HOME/.$FILE"
     cp "$FILE" "$HOME/.$FILE"
 done
