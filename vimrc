@@ -41,6 +41,9 @@ command Utb UseTabs
 command UseSpaces set expandtab
 command Usp UseSpaces
 
+" Use the style needed for data structures assignments
+command DStruct set tabstop=3 shiftwidth=3 softtabstop=3 expandtab
+
 " Make vim more responsive when ESC is pressed
 set timeout timeoutlen=1000 ttimeoutlen=100
 
