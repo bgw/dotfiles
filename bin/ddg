@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd $HOME/bin/ddg_data
+./ddg.py "$@"
