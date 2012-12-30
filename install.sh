@@ -15,6 +15,7 @@ OVERWRITE_DIRS[0]="vim"
 
 # a list of directories that should be extended with our files (or created)
 EXTENDED_DIRS[0]="fonts"
+EXTENDED_DIRS[1]="local/share/applications"
 
 # SPECIAL CASES ================================================================
 # ~/bin/ is special, as it doesn't get prepended with a dot
