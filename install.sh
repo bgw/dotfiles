@@ -1,6 +1,7 @@
 #!/bin/bash
 # A simple installer for the dotfiles
-# Run with -d to remove old configuration files first
+
+# CONFIGURABLES ================================================================
 
 # a list of files that simply need to be prepended with a dot and put in $HOME
 SIMPLE_FILES[0]="tmux.conf"
@@ -9,16 +10,28 @@ SIMPLE_FILES[2]="zshrc"
 SIMPLE_FILES[3]="gitconfig"
 SIMPLE_FILES[4]="gitignore"
 
-if [ $# -eq 1 ] && ( [ $1 = "-d" ] || [ $1 = "--delete" ] ); then
-    echo "Warning: Removing old install"
-    rm -rf "$HOME/bin"
-    rm -rf "$HOME/.vim"
-fi
+# a list of directories that should be overwritten (or created)
+OVERWRITE_DIRS[0]="vim"
 
-cp -r bin "$HOME"
-cp -r vim "$HOME/.vim"
-mkdir -p "$HOME/.fonts"
-cp -r fonts/* "$HOME/.fonts"
+# a list of directories that should be extended with our files (or created)
+EXTENDED_DIRS[0]="fonts"
+
+# SPECIAL CASES ================================================================
+# ~/bin/ is special, as it doesn't get prepended with a dot
+rm -rf "$HOME/bin"
+cp -r "bin" "$HOME/bin"
+
+# PROCESSING CODE ==============================================================
+for DIR in ${OVERWRITE_DIRS[@]}; do
+    rm -rf "$HOME/.$DIR"
+    cp -r "$DIR" "$HOME/.$DIR"
+done
+
+for DIR in ${EXTENDED_DIRS[@]}; do
+    mkdir -p "$HOME/.$DIR"
+    cp -r "$DIR/." "$HOME/.$DIR"
+done
+
 for FILE in ${SIMPLE_FILES[@]}; do
     rm -f "$HOME/.$FILE"
     cp "$FILE" "$HOME/.$FILE"
