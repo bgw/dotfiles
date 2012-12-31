@@ -3,5 +3,5 @@
 Name=Uzbl Tabbed
 Exec=uzbl-tabbed
 Type=Application
-Icon=/usr/share/uzbl/examples/data/uzbl.png
+Icon=uzbl
 Comment=Web interface tools which adhere to the unix philosophy
