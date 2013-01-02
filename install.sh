@@ -7,8 +7,10 @@
 SIMPLE_FILES[0]="tmux.conf"
 SIMPLE_FILES[1]="vimrc"
 SIMPLE_FILES[2]="zshrc"
-SIMPLE_FILES[3]="gitconfig"
-SIMPLE_FILES[4]="gitignore"
+SIMPLE_FILES[3]="profile"
+SIMPLE_FILES[4]="zprofile"
+SIMPLE_FILES[5]="gitconfig"
+SIMPLE_FILES[6]="gitignore"
 
 # a list of directories that should be overwritten (or created)
 OVERWRITE_DIRS[0]="vim"

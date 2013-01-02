@@ -39,9 +39,6 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# Alias ~/bin and ~/bin_local (for machine-local binaries)
-export PATH="$HOME/bin_local:$HOME/bin:$PATH"
-
 # Alias Sage and setup SageTeX
 export SAGE_ROOT="$HOME/Applications/$( \
     for alternative in "$(ls $HOME/Applications/ 2> /dev/null | grep ^sage)"; \
@@ -92,9 +89,6 @@ alias tma="tmux attach -t"
 
 # work around a bug with starting evince under tmux sometimes
 alias evince="dbus-launch evince"
-
-# add the android ndk to the path
-export PATH="$HOME/Applications/android-ndk-r8:$PATH"
 
 # Debian VBox virtual machine
 debvm-start() {
