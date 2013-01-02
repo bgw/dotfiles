@@ -80,8 +80,11 @@ fi
 alias apti="sudo aptitude install"
 alias aptr="sudo aptitude remove"
 alias aptd=aptr
+alias aptp="sudo aptitude purge"
 alias apts="aptitude search"
 alias aptv="aptitude versions"
+alias aptw="aptitude why"
+alias aptwn="aptitude why-not"
 alias aptu="sudo aptitude update && sudo aptitude safe-upgrade"
 
 # make attaching to a named tmux session easier
