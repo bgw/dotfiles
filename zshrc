@@ -61,7 +61,7 @@ export EDITOR=vim
 alias lynx="lynx -use_mouse"
 
 # shortcuts for school
-export SCHOOL_CUR="$HOME/Documents/school/12_fall"
+export SCHOOL_CUR="$HOME/Documents/school/13_spring"
 cdschool () {
     cd "$SCHOOL_CUR/$1"
 }
