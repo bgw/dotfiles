@@ -14,6 +14,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+# Make cd act like pushd instead, letting us use popd to go back
+setopt autopushd
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
