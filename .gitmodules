@@ -22,3 +22,6 @@
 [submodule "bin/ddg_data"]
 	path = bin/ddg_data
 	url = git://github.com/justinls/ddg.git
+[submodule "vim/bundle/pandoc"]
+	path = vim/bundle/pandoc
+	url = git://github.com/PiPeep/vim-pandoc.git
