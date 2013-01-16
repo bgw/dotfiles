@@ -21,6 +21,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab " use spaces in place of tabs
 
+" Unfold by default
+set foldlevel=99
+
 " Give us a line at 80 columns
 set textwidth=80
 set colorcolumn=+1
