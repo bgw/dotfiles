@@ -25,3 +25,6 @@
 [submodule "vim/bundle/pandoc"]
 	path = vim/bundle/pandoc
 	url = git://github.com/PiPeep/vim-pandoc.git
+[submodule "tmux/powerline"]
+	path = tmux/powerline
+	url = git://github.com/erikw/tmux-powerline.git
