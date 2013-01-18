@@ -16,11 +16,13 @@ SIMPLE_FILES[7]="gitignore"
 # a list of directories that should be overwritten (or created)
 OVERWRITE_DIRS[0]="vim"
 OVERWRITE_DIRS[1]="tmux"
+OVERWRITE_DIRS[2]="config/pipeep-common"
 
 # a list of directories that should be extended with our files (or created)
 EXTENDED_DIRS[0]="fonts"
-EXTENDED_DIRS[1]="local/share/applications"
-EXTENDED_DIRS[2]="icons"
+EXTENDED_DIRS[1]="fonts.conf.d"
+EXTENDED_DIRS[2]="local/share/applications"
+EXTENDED_DIRS[3]="icons"
 
 # SPECIAL CASES ================================================================
 # ~/bin/ is special, as it doesn't get prepended with a dot
