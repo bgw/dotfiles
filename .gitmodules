@@ -1,6 +1,3 @@
-[submodule "vim/bundle/powerline"]
-	path = vim/bundle/powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
@@ -28,3 +25,6 @@
 [submodule "config/pipeep-common/powerline"]
 	path = config/pipeep-common/powerline
 	url = git://github.com/Lokaltog/powerline.git
+[submodule "tmux/powerline"]
+	path = tmux/powerline
+	url = git://github.com/erikw/tmux-powerline.git
