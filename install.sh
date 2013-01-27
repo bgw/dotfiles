@@ -12,6 +12,7 @@ SIMPLE_FILES[4]="profile"
 SIMPLE_FILES[5]="zprofile"
 SIMPLE_FILES[6]="gitconfig"
 SIMPLE_FILES[7]="gitignore"
+SIMPLE_FILES[8]="ackrc"
 
 # a list of directories that should be overwritten (or created)
 OVERWRITE_DIRS[0]="vim"

@@ -1,0 +1,5 @@
+# Always color, even if piping to another program
+--color
+
+# Use a pager!
+--pager=less -R
