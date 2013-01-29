@@ -13,8 +13,6 @@ colorscheme jellybeans
 
 " Subconfiguration options
 filetype plugin on " custom language configuration
-set exrc           " enable per-directory .vimrc files
-set secure         " disable unsafe commands in local .vimrc files
 
 " handle indentation
 set autoindent

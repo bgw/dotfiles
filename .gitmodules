@@ -31,3 +31,6 @@
 [submodule "vim/bundle/sudo"]
 	path = vim/bundle/sudo
 	url = git://github.com/vim-scripts/sudo.vim.git
+[submodule "vim/bundle/localvimrc"]
+	path = vim/bundle/localvimrc
+	url = git://github.com/MarcWeber/vim-addon-local-vimrc.git
