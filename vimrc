@@ -1,15 +1,14 @@
-" enable pathogen
+" Enable pathogen
 call pathogen#infect()
-" enable powerline
+
+" Enable powerline
 set laststatus=2
 let g:Powerline_colorscheme='skwp'
 let g:Powerline_symbols = 'fancy'
 
+" Styling
 set t_Co=256 " I like colors!
 syntax on
-set background=dark
-let g:solarized_termcolors=256
-"colorscheme solarized
 colorscheme jellybeans
 
 " Subconfiguration options
