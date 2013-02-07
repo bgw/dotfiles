@@ -98,6 +98,11 @@ alias tma="tmux attach -t"
 # work around a bug with starting evince under tmux sometimes
 alias evince="dbus-launch evince"
 
+# ack is shorter than ack-grep
+if ! type ack > /dev/null; then
+    alias ack=ack-grep
+fi
+
 # Debian VBox virtual machine
 debvm-start() {
     echo "Once VM is booted, run: ssh debian_vm"
