@@ -45,3 +45,7 @@ for FILE in ${SIMPLE_FILES[@]}; do
     rm -f "$HOME/.$FILE"
     cp "$FILE" "$HOME/.$FILE"
 done
+
+# POSTINSTALL ==================================================================
+./gnome-terminal.sh && true
+
