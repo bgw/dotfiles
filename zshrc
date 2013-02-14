@@ -19,6 +19,9 @@ HISTFILE=~/.zsh_history
 # Make cd act like pushd instead, letting us use popd to go back
 setopt autopushd
 
+# Comments in the REPL, useful for ascii.io recordings
+setopt interactivecomments
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
