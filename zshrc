@@ -65,6 +65,8 @@ fi
 # Make less use -R by default
 alias less="less -R"
 
+alias treel="tree -C | less -R"
+
 # Use vim as the default editor
 export EDITOR=vim
 
