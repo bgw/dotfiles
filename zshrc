@@ -62,6 +62,9 @@ if [ ! -z $VLESS ]; then
     alias vless=$VLESS
 fi
 
+# Make less use -R by default
+alias less="less -R"
+
 # Use vim as the default editor
 export EDITOR=vim
 
