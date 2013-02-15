@@ -20,6 +20,5 @@ Just run::
     
     ./install.sh
 
-Or alternatively, to delete an old install first::
-    
-    ./install.sh -d
+Fair warning: *The install script does not ask you for permission to overwrite a
+file*. It just does it.
