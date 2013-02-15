@@ -16,8 +16,9 @@ SIMPLE_FILES[8]="ackrc"
 
 # a list of directories that should be overwritten (or created)
 OVERWRITE_DIRS[0]="vim"
-OVERWRITE_DIRS[1]="tmux"
-OVERWRITE_DIRS[2]="config/pipeep-common"
+OVERWRITE_DIRS[1]="zsh"
+OVERWRITE_DIRS[2]="tmux"
+OVERWRITE_DIRS[3]="config/pipeep-common"
 
 # a list of directories that should be extended with our files (or created)
 EXTENDED_DIRS[0]="fonts"
