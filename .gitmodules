@@ -21,7 +21,7 @@
 	url = git://github.com/justinls/ddg.git
 [submodule "vim/bundle/pandoc"]
 	path = vim/bundle/pandoc
-	url = git://github.com/PiPeep/vim-pandoc.git
+	url = git://github.com/vim-pandoc/vim-pandoc.git
 [submodule "config/pipeep-common/powerline"]
 	path = config/pipeep-common/powerline
 	url = git://github.com/Lokaltog/powerline.git
