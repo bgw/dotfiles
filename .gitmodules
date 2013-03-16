@@ -37,3 +37,6 @@
 [submodule "vim/bundle/hasksyn"]
 	path = vim/bundle/hasksyn
 	url = git://github.com/travitch/hasksyn.git
+[submodule "vim/bundle/rpal"]
+	path = vim/bundle/rpal
+	url = git://github.com/PiPeep/vim-rpal.git
