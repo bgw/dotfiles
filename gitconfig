@@ -16,5 +16,7 @@
 [diff "odt"]
     binary = true
     textconv = odt2txt
+[log]
+    decorate = true
 [color]
     ui = auto
