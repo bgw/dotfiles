@@ -16,6 +16,9 @@ fi
 if test -d "$HOME/bin_local"; then
     PATH="$HOME/bin_local:$PATH"
 fi
+if test -d "$HOME/.cabal/bin"; then
+    PATH="$HOME/.cabal/bin:$PATH"
+fi
 
 # add the android ndk to the path
 if test -d "$HOME/Applications/android-ndk-r8"; then
