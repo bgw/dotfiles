@@ -9,7 +9,11 @@ fi
 # Make less use -R by default
 alias less="less -R"
 
-alias treel="tree -C | less -R"
+# Improve tree
+tree() {
+    # Fancy UTF8 codes, colors, don't clear screen, quit if output is short
+    command tree --charset UTF8 -C "$@" | less -RXF
+}
 
 # make my ls pretty and colorful!
 alias ls="ls --color=auto"
