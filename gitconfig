@@ -18,5 +18,6 @@
     textconv = odt2txt
 [log]
     decorate = true
+    date = relative
 [color]
     ui = auto
