@@ -40,3 +40,6 @@
 [submodule "vim/bundle/rpal"]
 	path = vim/bundle/rpal
 	url = git://github.com/PiPeep/vim-rpal.git
+[submodule "zsh/bundle/bashmarks"]
+	path = zsh/bundle/bashmarks
+	url = git://github.com/huyng/bashmarks.git
