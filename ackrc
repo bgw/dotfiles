@@ -2,4 +2,4 @@
 --color
 
 # Use a pager!
---pager=less -R
+--pager=less -RXF
