@@ -1,18 +1,10 @@
 " Enable pathogen
 call pathogen#infect()
 
-" Enable powerline
-set laststatus=2
-let g:Powerline_colorscheme='skwp'
-let g:Powerline_symbols = 'fancy'
-
 " Styling
 set t_Co=256 " I like colors!
-syntax on
 colorscheme jellybeans
-
-" Subconfiguration options
-filetype plugin on " custom language configuration
+set encoding=utf-8
 
 " handle indentation
 set autoindent
@@ -28,7 +20,6 @@ set foldlevel=99
 " Give us a line at 80 columns
 set textwidth=80
 set colorcolumn=+1
-" highlight ColorColumn ctermbg=233
 
 " Let us use the mouse inside gnome-terminal
 set mouse=a
@@ -45,10 +36,7 @@ command Utb UseTabs
 command UseSpaces set expandtab
 command Usp UseSpaces
 
-" Make vim more responsive when ESC is pressed
-set timeout timeoutlen=1000 ttimeoutlen=100
-
-" Make searches highlighted
-set hlsearch " the default jellybeans coloring is fine for this
-" pressing space will disable search highlighting, and clear the message line
 nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Autocomplete me when opening a file:
+set wildmode=longest,list
