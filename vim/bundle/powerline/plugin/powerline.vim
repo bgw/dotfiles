@@ -1,1 +1,1 @@
-source ~/.config/pipeep-common/powerline/powerline/ext/vim/source_plugin.vim
+source ~/.config/pipeep-common/powerline/powerline/bindings/vim/plugin/powerline.vim
