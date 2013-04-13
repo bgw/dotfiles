@@ -16,8 +16,12 @@ I've hacked together that I use and that work for me.
 Installing
 ==========
 
-Just run::
-    
+You'll need to clone the repository and then all the submodules::
+
+    git submodule update --init
+
+Then just run::
+
     ./install.sh
 
 Fair warning: *The install script does not ask you for permission to overwrite a
