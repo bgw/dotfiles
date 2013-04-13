@@ -36,7 +36,7 @@ command Utb UseTabs
 command UseSpaces set expandtab
 command Usp UseSpaces
 
-nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+nnoremap <Space> :
 
 " Autocomplete me when opening a file:
 set wildmode=longest,list
