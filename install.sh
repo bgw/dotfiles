@@ -5,20 +5,19 @@
 
 # a list of files that simply need to be prepended with a dot and put in $HOME
 SIMPLE_FILES[0]="tmux.conf"
-SIMPLE_FILES[1]="tmux-powerlinerc"
-SIMPLE_FILES[2]="vimrc"
-SIMPLE_FILES[3]="zshrc"
-SIMPLE_FILES[4]="profile"
-SIMPLE_FILES[5]="zprofile"
-SIMPLE_FILES[6]="gitconfig"
-SIMPLE_FILES[7]="gitignore"
-SIMPLE_FILES[8]="ackrc"
+SIMPLE_FILES[1]="vimrc"
+SIMPLE_FILES[2]="zshrc"
+SIMPLE_FILES[3]="profile"
+SIMPLE_FILES[4]="zprofile"
+SIMPLE_FILES[5]="gitconfig"
+SIMPLE_FILES[6]="gitignore"
+SIMPLE_FILES[7]="ackrc"
 
 # a list of directories that should be overwritten (or created)
 OVERWRITE_DIRS[0]="vim"
 OVERWRITE_DIRS[1]="zsh"
-OVERWRITE_DIRS[2]="tmux"
-OVERWRITE_DIRS[3]="config/pipeep-common"
+OVERWRITE_DIRS[2]="config/pipeep-common"
+OVERWRITE_DIRS[3]="config/powerline"
 
 # a list of directories that should be extended with our files (or created)
 EXTENDED_DIRS[0]="fonts"
