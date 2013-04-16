@@ -1,6 +1,9 @@
 " Enable pathogen
 call pathogen#infect()
 
+" Run vim-sensible first so we can override it as needed
+runtime! plugin/sensible.vim
+
 " Styling
 set t_Co=256 " I like colors!
 colorscheme jellybeans
@@ -40,3 +43,8 @@ nnoremap <Space> :
 
 " Autocomplete me when opening a file:
 set wildmode=longest,list
+
+" Disable vim-sensible's undo files (because I don't think it's sensible)
+if has('persistent_undo')
+    set noundofile
+endif
