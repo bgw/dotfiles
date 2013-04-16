@@ -19,6 +19,12 @@ tree() {
 alias ls="ls --color=auto"
 alias sl=ls # yeah, I do this way too much
 
+# I do this *way* too often (Thanks Colin!)
+mkcd() {
+    mkdir -p "$1"
+    cd "$1"
+}
+
 # ack is shorter than ack-grep
 if ! type ack > /dev/null; then # Some systems already define `ack`
     alias ack=ack-grep
