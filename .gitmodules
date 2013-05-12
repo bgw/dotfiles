@@ -25,9 +25,6 @@
 [submodule "config/pipeep-common/powerline"]
 	path = config/pipeep-common/powerline
 	url = git://github.com/Lokaltog/powerline.git
-[submodule "tmux/powerline"]
-	path = tmux/powerline
-	url = git://github.com/erikw/tmux-powerline.git
 [submodule "vim/bundle/sudo"]
 	path = vim/bundle/sudo
 	url = git://github.com/vim-scripts/sudo.vim.git
