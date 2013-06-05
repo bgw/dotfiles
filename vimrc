@@ -12,9 +12,8 @@ set encoding=utf-8
 " handle indentation
 set autoindent
 set smartindent
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+command -nargs=1 SetIndent setlocal ts=<args> sts=<args> sw=<args>
+SetIndent 4
 set expandtab " use spaces in place of tabs
 
 " Unfold by default
