@@ -4,6 +4,8 @@
 [core]
     editor = vim
     excludesfile = ~/.gitignore
+[push]
+    default = simple
 [alias]
     br = branch
     co = checkout
