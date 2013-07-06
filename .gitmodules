@@ -52,3 +52,6 @@
 [submodule "vim/bundle/jade"]
 	path = vim/bundle/jade
 	url = git@github.com:digitaltoad/vim-jade.git
+[submodule "vim/bundle/editorconfig"]
+	path = vim/bundle/editorconfig
+	url = git@github.com:editorconfig/editorconfig-vim.git
