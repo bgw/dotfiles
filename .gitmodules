@@ -51,7 +51,7 @@
 	url = git://github.com/mattn/zencoding-vim.git
 [submodule "vim/bundle/jade"]
 	path = vim/bundle/jade
-	url = git@github.com:digitaltoad/vim-jade.git
+	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "vim/bundle/editorconfig"]
 	path = vim/bundle/editorconfig
-	url = git@github.com:editorconfig/editorconfig-vim.git
+	url = git://github.com/editorconfig/editorconfig-vim.git
