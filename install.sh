@@ -13,6 +13,7 @@ SIMPLE_FILES[5]="gitconfig"
 SIMPLE_FILES[6]="gitignore"
 SIMPLE_FILES[7]="ackrc"
 SIMPLE_FILES[8]="ghci"
+SIMPLE_FILES[9]="quiltrc-dpkg"
 
 # a list of directories that should be overwritten (or created)
 OVERWRITE_DIRS[0]="vim"
