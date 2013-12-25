@@ -34,6 +34,7 @@ cp -r "bin" "$HOME/bin"
 
 # PROCESSING CODE ==============================================================
 for DIR in ${OVERWRITE_DIRS[@]}; do
+    mkdir -p "$HOME/.$DIR"
     rm -rf "$HOME/.$DIR"
     cp -r "$DIR" "$HOME/.$DIR"
 done
