@@ -10,6 +10,8 @@ bindkey -e
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
 
 if [ $TERM = "xterm" ]; then
     # Use 256 Colors! (in xterm and things that report themselves as xterm, like
@@ -22,4 +24,3 @@ setopt autopushd
 
 # Comments in the REPL, useful for ascii.io recordings
 setopt interactivecomments
-
