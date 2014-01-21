@@ -55,3 +55,6 @@
 [submodule "vim/bundle/emmet"]
 	path = vim/bundle/emmet
 	url = https://github.com/mattn/emmet-vim
+[submodule "vim/bundle/avr-syntax"]
+	path = vim/bundle/avr-syntax
+	url = git://github.com/vim-scripts/avr.vim.git
