@@ -46,12 +46,12 @@
 [submodule "vim/bundle/html5"]
 	path = vim/bundle/html5
 	url = git://github.com/othree/html5.vim.git
-[submodule "vim/bundle/zencoding"]
-	path = vim/bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "vim/bundle/jade"]
 	path = vim/bundle/jade
 	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "vim/bundle/editorconfig"]
 	path = vim/bundle/editorconfig
 	url = git://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/emmet"]
+	path = vim/bundle/emmet
+	url = https://github.com/mattn/emmet-vim
