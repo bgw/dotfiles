@@ -8,6 +8,7 @@ runtime! plugin/sensible.vim
 set t_Co=256 " I like colors!
 colorscheme jellybeans
 set encoding=utf-8
+let g:pandoc_use_conceal=0
 
 " handle indentation
 set autoindent
