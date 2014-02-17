@@ -1,9 +1,3 @@
-# shortcuts for school
-export SCHOOL_CUR="$HOME/Documents/school/13_spring"
-cdschool () {
-    cd "$SCHOOL_CUR/$1"
-}
-
 # Debian VBox virtual machine
 debvm-start() {
     echo "Once VM is booted, run: ssh debian_vm"
