@@ -21,8 +21,8 @@ if test -d "$HOME/.cabal/bin"; then
 fi
 
 # add the android ndk to the path
-if test -d "$HOME/Applications/android-ndk-r8"; then
-    PATH="$HOME/Applications/android-ndk-r8:$PATH"
+if test -d "$HOME/applications/android-ndk-r8"; then
+    PATH="$HOME/applications/android-ndk-r8:$PATH"
 fi
 
 # define the prefered visual terminal
