@@ -14,7 +14,7 @@ let g:pandoc_use_conceal=0
 set autoindent
 set smartindent
 command -nargs=1 SetIndent setlocal ts=<args> sts=<args> sw=<args>
-SetIndent 4
+set ts=4 sts=4 sw=4
 set expandtab " use spaces in place of tabs
 
 " Unfold by default
