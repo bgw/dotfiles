@@ -48,3 +48,6 @@ set wildmode=longest,list
 if has('persistent_undo')
     set noundofile
 endif
+
+" Disable ~/.viminfo -- It's leaky and doesn't add much
+set viminfo=""
