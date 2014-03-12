@@ -25,5 +25,8 @@ if test -d "$HOME/applications/android-ndk-r8"; then
     PATH="$HOME/applications/android-ndk-r8:$PATH"
 fi
 
+# disable ~/.lesshst (potential data leakage)
+LESSHISTFILE=/dev/null
+
 # define the prefered visual terminal
 VTERM=x-terminal-emulator
