@@ -58,3 +58,6 @@
 [submodule "vim/bundle/avr-syntax"]
 	path = vim/bundle/avr-syntax
 	url = git://github.com/vim-scripts/avr.vim.git
+[submodule "vim/bundle/ansible-yaml"]
+	path = vim/bundle/ansible-yaml
+	url = git://github.com/chase/vim-ansible-yaml.git
