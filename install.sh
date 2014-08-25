@@ -14,6 +14,7 @@ SIMPLE_FILES[6]="gitignore"
 SIMPLE_FILES[7]="ackrc"
 SIMPLE_FILES[8]="ghci"
 SIMPLE_FILES[9]="quiltrc-dpkg"
+SIMPLE_FILES[10]="Xmodmap"
 
 # a list of directories that should be overwritten (or created)
 OVERWRITE_DIRS[0]="vim"
@@ -49,4 +50,4 @@ done
 
 # POSTINSTALL ==================================================================
 ./gnome-terminal.sh && true
-
+xmodmap ~/.Xmodmap 2> /dev/null && true # will cause errors if already loaded
