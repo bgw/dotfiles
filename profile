@@ -20,9 +20,12 @@ if test -d "$HOME/.cabal/bin"; then
     PATH="$HOME/.cabal/bin:$PATH"
 fi
 
-# add the android ndk to the path
-if test -d "$HOME/applications/android-ndk-r8"; then
-    PATH="$HOME/applications/android-ndk-r8:$PATH"
+# android stuff
+if test -d "/opt/android-sdk"; then
+    PATH="$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools"
+fi
+if test -d "$HOME/opt/gradle"; then
+    PATH="$PATH:$HOME/opt/gradle/bin"
 fi
 
 # disable ~/.lesshst (potential data leakage)
