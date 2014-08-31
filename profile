@@ -5,31 +5,40 @@
 if test -n "$BASH_VERSION"; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+        . "$HOME/.bashrc"
     fi
 fi
 
+path_prepend() {
+    if test -d "$1"; then
+        PATH="$1:$PATH"
+    fi
+}
+
+path_append() {
+    if test -d "$1"; then
+        PATH="$PATH:$1"
+    fi
+}
+
 # local bin directories
-if test -d "$HOME/bin"; then
-    PATH="$HOME/bin:$PATH"
-fi
-if test -d "$HOME/bin_local"; then
-    PATH="$HOME/bin_local:$PATH"
-fi
-if test -d "$HOME/.cabal/bin"; then
-    PATH="$HOME/.cabal/bin:$PATH"
-fi
+path_prepend "$HOME/bin"
+path_prepend "$HOME/bin_local"
+path_prepend "$HOME/.cabal/bin"
 
 # android stuff
-if test -d "/opt/android-sdk"; then
-    PATH="$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools"
-fi
-if test -d "$HOME/opt/gradle"; then
-    PATH="$PATH:$HOME/opt/gradle/bin"
-fi
+export ANDROID_HOME="$HOME/opt/android-sdk"
+export ANDROID_SDK="$ANDROID_HOME"
+path_append "$ANDROID_SDK_HOME/tools"
+path_append "$ANDROID_SDK_HOME/platform-tools"
+path_append "$HOME/opt/gradle/bin"
+path_append "$HOME/opt/buck/bin"
 
 # disable ~/.lesshst (potential data leakage)
-LESSHISTFILE=/dev/null
+export LESSHISTFILE=/dev/null
 
 # define the prefered visual terminal
-VTERM=x-terminal-emulator
+export VTERM=x-terminal-emulator
+
+unset -f path_prepend
+unset -f path_append
