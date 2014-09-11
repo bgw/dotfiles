@@ -19,9 +19,6 @@
 [submodule "bin/ddg_data"]
 	path = bin/ddg_data
 	url = git://github.com/justinls/ddg.git
-[submodule "vim/bundle/pandoc"]
-	path = vim/bundle/pandoc
-	url = git://github.com/vim-pandoc/vim-pandoc.git
 [submodule "config/pipeep-common/powerline"]
 	path = config/pipeep-common/powerline
 	url = git://github.com/Lokaltog/powerline.git
@@ -61,3 +58,6 @@
 [submodule "vim/bundle/ansible-yaml"]
 	path = vim/bundle/ansible-yaml
 	url = git://github.com/chase/vim-ansible-yaml.git
+[submodule "vim/bundle/pandoc-legacy"]
+	path = vim/bundle/pandoc-legacy
+	url = git://github.com/vim-pandoc/vim-pandoc-legacy.git
