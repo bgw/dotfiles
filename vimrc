@@ -40,6 +40,7 @@ command UseSpaces set expandtab
 command Usp UseSpaces
 
 nnoremap <Space> :
+nnoremap Y y$
 
 " Autocomplete me when opening a file:
 set wildmode=longest,list
