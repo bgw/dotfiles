@@ -9,12 +9,14 @@
 [alias]
     br = branch
     co = checkout
-    stats = status
-    st = status
     df = diff
     diffstat = diff --stat
-    graphlong = log --graph
+    ff = merge --ff-only
+    gr = log --graph --oneline
     graph = log --graph --oneline
+    pu = push --set-upstream origin HEAD
+    st = status
+    stats = status
 [diff "odt"]
     binary = true
     textconv = odt2txt
