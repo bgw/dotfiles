@@ -1,6 +1,6 @@
 [user]
     name = Benjamin Woodruff
-    email = benjaminwoodruff@ufl.edu
+    email = github@benjam.info
 [core]
     editor = vim
     excludesfile = ~/.gitignore
