@@ -42,6 +42,8 @@ command Usp UseSpaces
 nnoremap <Space> :
 nnoremap Y y$
 
+nmap <F8> :TagbarToggle<CR>
+
 " Autocomplete me when opening a file:
 set wildmode=longest,list
 
