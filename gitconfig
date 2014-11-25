@@ -7,10 +7,12 @@
 [push]
     default = simple
 [alias]
+    amend = commit --amend --no-edit
     br = branch
     co = checkout
     df = diff
     diffstat = diff --stat
+    edit = commit --amend --only
     ff = merge --ff-only
     gr = log --graph --oneline
     graph = log --graph --oneline
