@@ -20,7 +20,21 @@ zstyle ':vcs_info:*' enable git hg svn
 vcs_info_wrapper() {
     vcs_info
     if [ -n "$vcs_info_msg_0_" ]; then
-        echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}"
+        echo " [$vcs_info_msg_0_]"
     fi
 }
-RPROMPT=$'$(vcs_info_wrapper)'
+virtualenv_info_wrapper() {
+    if [ -n "$VIRTUAL_ENV" ]; then
+        if [ -f "$VIRTUAL_ENV/__name__" ]; then
+            local name=`cat $VIRTUAL_ENV/__name__`
+        elif [ `basename $VIRTUAL_ENV` = "__" ]; then
+            local name=$(basename $(dirname $VIRTUAL_ENV))
+        else
+            local name=$(basename $VIRTUAL_ENV)
+        fi
+        echo " [$name]"
+    fi
+}
+RPROMPT='%F{243}'
+RPROMPT="$RPROMPT"'$(vcs_info_wrapper)$(virtualenv_info_wrapper)'
+RPROMPT="$RPROMPT"'%f'
