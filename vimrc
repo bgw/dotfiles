@@ -6,7 +6,11 @@ runtime! plugin/sensible.vim
 
 " Styling
 set t_Co=256 " I like colors!
-colorscheme jellybeans
+set t_ut= " disable background color erase
+let g:base16_shell_path='~/.config/base16/shell'
+let base16colorspace="256"
+set background=dark
+colorscheme base16-default
 set encoding=utf-8
 let g:pandoc_use_conceal=0
 

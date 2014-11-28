@@ -18,7 +18,7 @@ Installing
 
 You'll need to clone the repository and then all the submodules::
 
-    git submodule update --init
+    git submodule update --init --recursive
 
 Then just run::
 
