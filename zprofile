@@ -4,4 +4,3 @@ if [[ -e ~/.profile ]]; then
     . $HOME/.profile
     emulate zsh
 fi
-

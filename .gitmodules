@@ -34,9 +34,6 @@
 [submodule "vim/bundle/rpal"]
 	path = vim/bundle/rpal
 	url = git://github.com/PiPeep/vim-rpal.git
-[submodule "zsh/bundle/bashmarks"]
-	path = zsh/bundle/bashmarks
-	url = git://github.com/huyng/bashmarks.git
 [submodule "vim/bundle/sensible"]
 	path = vim/bundle/sensible
 	url = git://github.com/tpope/vim-sensible.git
@@ -64,3 +61,15 @@
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "zsh/bundle/oh-my-zsh"]
+	path = zsh/bundle/oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "config/base16/gnome-terminal"]
+	path = config/base16/gnome-terminal
+	url = git://github.com/chriskempson/base16-gnome-terminal.git
+[submodule "config/base16/shell"]
+	path = config/base16/shell
+	url = git://github.com/chriskempson/base16-shell.git
+[submodule "vim/bundle/base16"]
+	path = vim/bundle/base16
+	url = git://github.com/chriskempson/base16-vim.git
