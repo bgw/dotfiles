@@ -1,5 +1,5 @@
-# make attaching to a named tmux session easier
-alias tma="tmux attach -t"
-
 # work around a bug with starting evince under tmux sometimes
 alias evince="dbus-launch evince"
+
+# I like spawning multiple tmux sessions
+ZSH_TMUX_AUTOCONNECT=false

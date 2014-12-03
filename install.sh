@@ -38,6 +38,9 @@ extended_dirs=(
 rm -rf ~/bin
 cp -r bin ~/bin
 
+# needed for the oh-my-zsh gnupg plugin
+touch ~/.gnupg/gpg-agent.env
+
 # PROCESSING CODE ==============================================================
 for dir in $overwrite_dirs; do
     mkdir -p ~/."$dir"
@@ -57,5 +60,5 @@ done
 
 # POSTINSTALL ==================================================================
 #./gnome-terminal.sh && true
-zsh config/base16/gnome-terminal/base16-default.dark.sh
+#zsh config/base16/gnome-terminal/base16-default.dark.sh # disable for now
 xmodmap ~/.Xmodmap 2> /dev/null && true # will cause errors if already loaded
