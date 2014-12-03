@@ -10,8 +10,9 @@ bindkey -e
 HISTSIZE=5000
 SAVEHIST=5000
 HISTFILE=~/.zsh_history
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+unsetopt share_history # oh-my-zsh sets this, I don't want it.
 
 if [ $TERM = "xterm" ]; then
     # Use 256 Colors! (in xterm and things that report themselves as xterm, like
