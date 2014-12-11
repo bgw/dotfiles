@@ -12,7 +12,6 @@ let base16colorspace="256"
 set background=dark
 colorscheme base16-default
 set encoding=utf-8
-let g:pandoc_use_conceal=0
 
 " handle indentation
 set autoindent
@@ -58,3 +57,21 @@ endif
 
 " Disable ~/.viminfo -- It's leaky and doesn't add much
 set viminfo=""
+
+" pandoc
+let g:pandoc#syntax#conceal#use=0
+let g:pandoc#formatting#textwidth=&textwidth
+let g:pandoc#formatting#mode = "hA"
+let g:pandoc#modules#enabled = [
+    \"bibliographies",
+    \"completion",
+    \"command",
+    \"formatting",
+    \"menu",
+    \"metadata",
+    \"keyboard" ,
+    \"toc",
+    \"chdir",
+    \"spell",
+    \"hypertext"]
+"\"folding",
