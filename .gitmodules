@@ -55,9 +55,6 @@
 [submodule "vim/bundle/ansible-yaml"]
 	path = vim/bundle/ansible-yaml
 	url = git://github.com/chase/vim-ansible-yaml.git
-[submodule "vim/bundle/pandoc-legacy"]
-	path = vim/bundle/pandoc-legacy
-	url = git://github.com/vim-pandoc/vim-pandoc-legacy.git
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
@@ -73,3 +70,9 @@
 [submodule "vim/bundle/base16"]
 	path = vim/bundle/base16
 	url = git://github.com/chriskempson/base16-vim.git
+[submodule "vim/bundle/pandoc-syntax"]
+	path = vim/bundle/pandoc-syntax
+	url = git://github.com/vim-pandoc/vim-pandoc-syntax.git
+[submodule "vim/bundle/pandoc"]
+	path = vim/bundle/pandoc
+	url = git://github.com/vim-pandoc/vim-pandoc.git
