@@ -3,8 +3,10 @@
 # The editor of the gods
 export EDITOR=vim
 
-# Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
+# Use vi keybindings regardless of EDITOR
+bindkey -v
+KEYTIMEOUT=1
+bindkey -M vicmd '/' history-incremental-search-backward
 
 # Keep 5000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=5000
