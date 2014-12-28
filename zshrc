@@ -11,6 +11,7 @@ plugins=(
     npm
     tmux
     vagrant
+    vi-mode
     virtualenv
 )
 

@@ -13,5 +13,5 @@ setopt prompt_subst
 
 PROMPT='
 %n@%m %{%F{green}%}$PWD$alignment%{%F{red}%}$(rvm_prompt_info || rbenv_prompt_info)%{$reset_color%}
-%(?,%{%F{green}%},%{%F{red}%})⚡%{$reset_color%} '
+%(?,%{%F{green}%},%{%F{red}%})%{$reset_color%} '
 RPROMPT='$(git_prompt_info)$(virtualenv_prompt_info)'
