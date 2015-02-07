@@ -61,7 +61,7 @@ set viminfo=""
 " pandoc
 let g:pandoc#syntax#conceal#use=0
 let g:pandoc#formatting#textwidth=&textwidth
-let g:pandoc#formatting#mode = "hA"
+let g:pandoc#formatting#mode = "ha"
 let g:pandoc#modules#enabled = [
     \"bibliographies",
     \"completion",
