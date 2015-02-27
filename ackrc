@@ -1,5 +1,9 @@
-# Always color, even if piping to another program
+# always color, even if piping to another program
 --color
 
-# Use a pager!
+# use a pager!
 --pager=less -RXF
+
+# add support for more languages
+--type-set=coffeescript=.coffee
+--type-set=markdown=.md,.markdown
