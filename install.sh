@@ -61,4 +61,6 @@ done
 # POSTINSTALL ==================================================================
 #./gnome-terminal.sh && true
 #zsh config/base16/gnome-terminal/base16-default.dark.sh # disable for now
+tic xterm-256color-italic.terminfo
+tic screen-256color-italic.terminfo
 xmodmap ~/.Xmodmap 2> /dev/null && true # will cause errors if already loaded
