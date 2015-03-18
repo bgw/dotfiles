@@ -1,9 +1,8 @@
-========
 dotfiles
 ========
 
 Disclaimer
-==========
+----------
 
 This repository is intended for my own personal use. If someone else can glean
 anything from it, all the better, but it is not intended for anyone else to use.
@@ -14,13 +13,13 @@ some cruft. That's not the point. These are configuration files and such that
 I've hacked together that I use and that work for me.
 
 Installing
-==========
+----------
 
-You'll need to clone the repository and then all the submodules::
+You'll need to clone the repository and then all the submodules:
 
     git submodule update --init --recursive
 
-Then just run::
+Then just run:
 
     ./install.sh
 
