@@ -41,7 +41,7 @@ _truncated_ls() {
                                    --format=across \
                                    --color=always \
                                    --width=$COLUMNS)"
-    local RAW_LS_LINES=$(builtin echo -E "$RAW_LS_OUT" | wc -l)
+    local RAW_LS_LINES="$(builtin echo -E "$RAW_LS_OUT" | wc -l)"
 
     if [[ $RAW_LS_LINES -gt $LS_LINES ]]; then
         builtin echo -E "$RAW_LS_OUT" | head -n $(($LS_LINES - 1))
