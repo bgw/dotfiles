@@ -78,4 +78,7 @@
 	url = git://github.com/vim-pandoc/vim-pandoc.git
 [submodule "vim/bundle/nim"]
 	path = vim/bundle/nim
-	url = git@github.com:zah/nimrod.vim.git
+	url = git://github.com/zah/nimrod.vim.git
+[submodule "vim/bundle/salt"]
+	path = vim/bundle/salt
+	url = git://github.com/saltstack/salt-vim.git
