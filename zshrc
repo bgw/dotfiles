@@ -25,3 +25,7 @@ source ~/.zsh/associations.zsh
 for f in ~/.zsh/commands/**/*; do
     source "$f"
 done
+
+if [[ -f "~/.zshrc.local" ]]; then
+    source "~/.zshrc.local"
+fi

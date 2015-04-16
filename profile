@@ -1,14 +1,5 @@
 # ~/.profile: executed by the command interpreter for login shells
 
-# if running bash
-# TODO: Move to ~/.bash_profile
-if test -n "$BASH_VERSION"; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-        . "$HOME/.bashrc"
-    fi
-fi
-
 path_prepend() {
     if test -d "$1"; then
         PATH="$1:$PATH"
@@ -39,6 +30,19 @@ export LESSHISTFILE=/dev/null
 
 # define the prefered visual terminal
 export VTERM=x-terminal-emulator
+
+if [ -f "$HOME/.profile.local" ]; then
+    . "$HOME/.profile.local"
+fi
+
+# if running bash
+# TODO: Move to ~/.bash_profile
+if test -n "$BASH_VERSION"; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+    fi
+fi
 
 unset -f path_prepend
 unset -f path_append
