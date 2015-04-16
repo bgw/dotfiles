@@ -50,10 +50,10 @@ _truncated_ls() {
                                               --format=across \
                                               --color=always \
                                               --width=$COLUMNS)"
-    local RAW_LS_LINES="$(builtin echo -E "$RAW_LS_OUT" | wc -l)"
+    local RAW_LS_LINES="$(command wc -l <<< "$RAW_LS_OUT")"
 
     if [[ $RAW_LS_LINES -gt $LS_LINES ]]; then
-        builtin echo -E "$RAW_LS_OUT" | head -n $(($LS_LINES - 1))
+        command head -n $(($LS_LINES - 1)) <<< "$RAW_LS_OUT"
         _right_align "... $(($RAW_LS_LINES - $LS_LINES + 1)) lines hidden"
     else
         builtin echo -E "$RAW_LS_OUT"
@@ -62,12 +62,8 @@ _truncated_ls() {
 
 # right align text and echo it; helper function for _truncated_ls
 _right_align() {
-    local PADDING=$(($COLUMNS - $(builtin echo "$1" | wc -m)))
-    if [[ $PADDING -gt 0 ]]; then
-        for i in {1..$PADDING}; do
-            builtin echo -n " "
-        done
-    fi
+    local PADDING=$(($COLUMNS - ${#1}))
+    [[ $PADDING -gt 0 ]] && builtin printf "%${PADDING}s"
     builtin echo "$1"
 }
 
