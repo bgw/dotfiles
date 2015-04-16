@@ -7,3 +7,4 @@
 # add support for more languages
 --type-set=coffeescript=.coffee
 --type-set=markdown=.md,.markdown
+--type-set=haml=.haml
