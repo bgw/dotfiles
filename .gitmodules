@@ -88,3 +88,6 @@
 [submodule "vim/bundle/jsx"]
 	path = vim/bundle/jsx
 	url = git://github.com/mxw/vim-jsx.git
+[submodule "vim/bundle/sleuth"]
+	path = vim/bundle/sleuth
+	url = git://github.com/tpope/vim-sleuth.git
