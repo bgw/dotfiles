@@ -11,6 +11,8 @@ let g:base16_shell_path='~/.config/base16/shell'
 let base16colorspace="256"
 set background=dark
 colorscheme base16-default
+set hlsearch
+highlight Search ctermbg=bg ctermfg=yellow cterm=underline
 set encoding=utf-8
 
 " handle indentation
