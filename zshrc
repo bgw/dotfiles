@@ -6,7 +6,6 @@ plugins=(
     autojump
     colored-man
     git
-    gpg-agent
     mosh
     npm
     tmux
