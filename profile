@@ -16,6 +16,7 @@ path_append() {
 path_prepend "$HOME/bin"
 path_prepend "$HOME/bin_local"
 path_prepend "$HOME/.cabal/bin"
+path_prepend "$HOME/.npm-packages/bin"
 
 # android stuff
 export ANDROID_HOME="$HOME/opt/android-sdk"

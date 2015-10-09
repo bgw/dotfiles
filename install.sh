@@ -5,15 +5,16 @@
 
 # files that simply need to be prepended with a dot and put in $HOME
 simple_files=(
-    Xmodmap
     ackrc
     ghci
     gitconfig
     gitignore
+    npmrc
     profile
     quiltrc-dpkg
     tmux.conf
     vimrc
+    Xmodmap
     zprofile
     zshrc
 )
