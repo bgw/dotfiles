@@ -32,6 +32,9 @@ export LESSHISTFILE=/dev/null
 # define the prefered visual terminal
 export VTERM=x-terminal-emulator
 
+# vagrant
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+
 if [ -f "$HOME/.profile.local" ]; then
     . "$HOME/.profile.local"
 fi
