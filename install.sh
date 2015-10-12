@@ -22,6 +22,7 @@ simple_files=(
 # directories that should be overwritten (or created)
 overwrite_dirs=(
     config/base16
+    config/mpDris2
     config/pipeep-common
     config/powerline
     vim
