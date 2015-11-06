@@ -17,6 +17,7 @@ path_prepend "$HOME/bin"
 path_prepend "$HOME/bin_local"
 path_prepend "$HOME/.cabal/bin"
 path_prepend "$HOME/.npm-packages/bin"
+path_prepend "$HOME/.local/bin" # used by pip
 
 # android stuff
 export ANDROID_HOME="$HOME/opt/android-sdk"
