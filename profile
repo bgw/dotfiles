@@ -40,6 +40,9 @@ if [ -f "$HOME/.profile.local" ]; then
     . "$HOME/.profile.local"
 fi
 
+# npm
+export NODE_PATH="$NODE_PATH:$HOME/.npm-packages/lib/node_modules"
+
 # if running bash
 # TODO: Move to ~/.bash_profile
 if test -n "$BASH_VERSION"; then
