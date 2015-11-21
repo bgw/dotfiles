@@ -43,6 +43,9 @@ fi
 # npm
 export NODE_PATH="$NODE_PATH:$HOME/.npm-packages/lib/node_modules"
 
+# libvirt/virsh
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+
 # if running bash
 # TODO: Move to ~/.bash_profile
 if test -n "$BASH_VERSION"; then
