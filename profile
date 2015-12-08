@@ -12,6 +12,9 @@ path_append() {
     fi
 }
 
+# ccache
+path_prepend "/usr/lib/ccache"
+
 # local bin directories
 path_prepend "$HOME/bin"
 path_prepend "$HOME/bin_local"
