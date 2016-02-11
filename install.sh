@@ -41,6 +41,7 @@ rm -rf ~/bin
 cp -r bin ~/bin
 
 # needed for the oh-my-zsh gnupg plugin
+mkdir -p ~/.gnupg
 touch ~/.gnupg/gpg-agent.env
 
 # PROCESSING CODE ==============================================================
