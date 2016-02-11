@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 # A simple installer for the dotfiles
 
 # CONFIGURABLES ================================================================
