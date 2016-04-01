@@ -77,6 +77,9 @@ let g:pandoc#modules#enabled = [
     \"spell",
     \"hypertext"]
 
+" javascript
+let g:jsx_ext_required = 0
+
 " ctrlp options for working with large projects
 " https://github.com/FelikZ/ctrlp-py-matcher/blob/master/doc/pymatcher.txt
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
