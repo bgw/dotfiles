@@ -97,3 +97,6 @@
 [submodule "vim/bundle/javascript-indent"]
 	path = vim/bundle/javascript-indent
 	url = git://github.com/rschmukler/pangloss-vim-indent.git
+[submodule "vim/bundle/javascript"]
+	path = vim/bundle/javascript
+	url = git://github.com/pangloss/vim-javascript.git
