@@ -91,12 +91,12 @@
 [submodule "vim/bundle/ctrlp-py-matcher"]
 	path = vim/bundle/ctrlp-py-matcher
 	url = git://github.com/FelikZ/ctrlp-py-matcher.git
-[submodule "vim/bundle/yajs"]
-	path = vim/bundle/yajs
-	url = git://github.com/othree/yajs.vim.git
 [submodule "vim/bundle/javascript-indent"]
 	path = vim/bundle/javascript-indent
 	url = git://github.com/rschmukler/pangloss-vim-indent.git
 [submodule "vim/bundle/javascript"]
 	path = vim/bundle/javascript
 	url = git://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/jinja"]
+	path = vim/bundle/jinja
+	url = git://github.com/lepture/vim-jinja.git
