@@ -19,6 +19,7 @@ path_prepend "/usr/lib/ccache"
 path_prepend "$HOME/bin"
 path_prepend "$HOME/bin_local"
 path_prepend "$HOME/.cabal/bin"
+path_prepend "$HOME/.yarn-config/global/node_modules/.bin"
 path_prepend "$HOME/.npm-packages/bin"
 path_prepend "$HOME/.local/bin" # used by pip
 
