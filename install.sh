@@ -6,6 +6,7 @@
 # files that simply need to be prepended with a dot and put in $HOME
 simple_files=(
     ackrc
+    config/redshift.conf
     ghci
     gitconfig
     gitignore
