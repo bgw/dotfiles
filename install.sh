@@ -10,6 +10,7 @@ simple_files=(
     ghci
     gitconfig
     gitignore
+    hyper.js
     npmrc
     profile
     quiltrc-dpkg
@@ -22,7 +23,6 @@ simple_files=(
 
 # directories that should be overwritten (or created)
 overwrite_dirs=(
-    config/base16
     config/mpDris2
     config/pipeep-common
     config/powerline
@@ -63,8 +63,6 @@ for file in $simple_files; do
 done
 
 # POSTINSTALL ==================================================================
-#./gnome-terminal.sh && true
-#zsh config/base16/gnome-terminal/base16-default.dark.sh # disable for now
 tic xterm-256color.terminfo
 tic screen-256color.terminfo
 xmodmap ~/.Xmodmap 2> /dev/null && true # will cause errors if already loaded

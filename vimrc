@@ -7,12 +7,10 @@ runtime! plugin/sensible.vim
 " Styling
 set t_Co=256 " I like colors!
 set t_ut= " disable background color erase
-let g:base16_shell_path='~/.config/base16/shell'
-let base16colorspace="256"
-set background=dark
-colorscheme base16-default
+colorscheme base16-default-dark
 set hlsearch
-highlight Search ctermbg=bg ctermfg=yellow cterm=underline
+highlight Search ctermbg=00 ctermfg=03 cterm=underline
+highlight VertSplit ctermbg=232 ctermfg=232
 set encoding=utf-8
 
 " handle indentation
@@ -28,6 +26,7 @@ set foldlevel=99
 " Give us a line at 80 columns
 set textwidth=80
 set colorcolumn=+1
+highlight ColorColumn ctermbg=235
 
 " Let us use the mouse inside gnome-terminal
 set mouse=a
