@@ -43,6 +43,37 @@ module.exports = {
       .hyper_main {
         border: none;
       }
+      .tabs_nav {
+        font-size: 11pt;
+        font-weight: 600;
+      }
+
+      .tab_tab {
+        background-color: ${base16.base01};
+        border-width: 0;
+        color: ${base16.base03};
+        transition: background-color 0.2s ease;
+      }
+
+      .tab_tab:hover {
+        background-color: ${base16.base02};
+      }
+
+      .tab_tab .tab_textInner {
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color 0.2s ease, color 0.2s ease;
+      }
+
+      .tab_active .tab_textInner {
+        border-bottom-color: ${base16.base0D};
+        color: ${base16.base05};
+      }
+
+      .tab_icon {
+        /* normally has a scale(0.95), get rid of that */
+        transform: none;
+      }
+
       ::-webkit-scrollbar {
         width: 0;
       }
