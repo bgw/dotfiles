@@ -45,6 +45,10 @@ cp -r bin ~/bin
 mkdir -p ~/.gnupg
 touch ~/.gnupg/gpg-agent.env
 
+# clean up old inconsolata fonts
+rm -f ~/.fonts/Inconsolata*
+rm -f fonts.conf.d/10-powerline-symbols.conf
+
 # PROCESSING CODE ==============================================================
 for dir in $overwrite_dirs; do
     mkdir -p ~/."$dir"

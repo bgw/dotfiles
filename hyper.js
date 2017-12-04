@@ -24,12 +24,12 @@ module.exports = {
   config: {
     updateChannel: 'canary',
 
-    fontSize: 16,
-    fontFamily: '"Inconsolata Nerd Font", Inconsolata, Monospace',
+    fontSize: 12,
+    fontFamily: '"Knack Nerd Font", Hack',
     uiFontFamily: 'Cantarell',
     // 80x24: use termSize once available:
     // https://github.com/zeit/hyper/issues/430
-    windowSize: [634, 408],
+    windowSize: [577, 336],
 
     cursorColor: base16.base05,
     cursorShape: 'BLOCK',
@@ -40,9 +40,11 @@ module.exports = {
         /* breaks xterm.js' sizing computation */
         transition: none;
       }
+
       .hyper_main {
         border: none;
       }
+
       .tabs_nav {
         font-size: 11pt;
         font-weight: 600;
