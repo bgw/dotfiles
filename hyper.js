@@ -36,6 +36,12 @@ module.exports = {
     cursorBlink: false,
 
     css: `
+      body {
+        /* we need to unset this for hyper to actually antialias correctly */
+        -webkit-backface-visibility: unset;
+        backface-visibility: unset;
+      }
+
       .terms_terms {
         /* breaks xterm.js' sizing computation */
         transition: none;
