@@ -33,7 +33,6 @@ overwrite_dirs=(
 # directories that should be extended with our files (or created)
 extended_dirs=(
     fonts
-    fonts.conf.d
 )
 
 # SPECIAL CASES ================================================================
@@ -47,7 +46,7 @@ touch ~/.gnupg/gpg-agent.env
 
 # clean up old inconsolata fonts
 rm -f ~/.fonts/Inconsolata*
-rm -f fonts.conf.d/10-powerline-symbols.conf
+rm -f ~/.fonts.conf.d/10-powerline-symbols.conf
 
 # PROCESSING CODE ==============================================================
 for dir in $overwrite_dirs; do
