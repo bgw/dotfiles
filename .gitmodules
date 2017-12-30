@@ -100,3 +100,9 @@
 [submodule "vim/bundle/jinja"]
 	path = vim/bundle/jinja
 	url = git://github.com/lepture/vim-jinja.git
+[submodule "vim/bundle/airline"]
+	path = vim/bundle/airline
+	url = git://github.com/vim-airline/vim-airline.git
+[submodule "vim/bundle/airline-themes"]
+	path = vim/bundle/airline-themes
+	url = git://github.com/vim-airline/vim-airline-themes.git

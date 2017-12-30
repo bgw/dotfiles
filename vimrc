@@ -8,6 +8,9 @@ runtime! plugin/sensible.vim
 set t_Co=256 " I like colors!
 set t_ut= " disable background color erase
 colorscheme base16-default-dark
+let g:airline_theme='base16_default'
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
 set hlsearch
 highlight Search ctermbg=00 ctermfg=03 cterm=underline
 highlight VertSplit ctermbg=232 ctermfg=232
