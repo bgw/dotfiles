@@ -91,6 +91,9 @@ module.exports = {
 
     showHamburgerMenu: false,
     showWindowControls: true, // native decorations override this anyways
+    nativeWindowDecoration: {
+      menuBar: 'disable',
+    },
 
     colors: {
       black: base16.base00,
@@ -127,8 +130,8 @@ module.exports = {
 
   // format: [@org/]project[#version]
   plugins: [
-    'hyperlinks',
     'hyper-native-window-decoration',
+    'hyper-shift-select',
   ],
 
   // ~/.hyper_plugins/local/
