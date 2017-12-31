@@ -14,7 +14,14 @@ let g:airline_skip_empty_sections = 1
 set hlsearch
 highlight Search ctermbg=00 ctermfg=03 cterm=underline
 highlight VertSplit ctermbg=232 ctermfg=232
+highlight LineNr ctermbg=235 ctermfg=08
 set encoding=utf-8
+
+" ALE
+let g:ale_enabled=0 " disable by default, until I'm more comfortable with it
+highlight SignColumn ctermbg=235
+highlight ALEErrorSign ctermbg=01 ctermfg=01
+highlight ALEWarningSign ctermbg=03 ctermfg=03
 
 " handle indentation
 set autoindent
