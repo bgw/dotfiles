@@ -3,14 +3,16 @@ ZSH_THEME=pipeep
 plugins=(
     adb
     autojump
-    colored-man
+    colored-man-pages
     git
     mosh
     npm
+    systemd
     tmux
     vagrant
     vi-mode
     virtualenv
+    yarn
 )
 
 for f in ~/.zsh/bundle/*.zsh; do
