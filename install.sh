@@ -16,7 +16,6 @@ simple_files=(
     quiltrc-dpkg
     tmux.conf
     vimrc
-    Xmodmap
     zprofile
     zshrc
 )
@@ -41,13 +40,12 @@ extended_dirs=(
 rm -rf ~/bin
 cp -r bin ~/bin
 
-# needed for the oh-my-zsh gnupg plugin
-mkdir -p ~/.gnupg
-touch ~/.gnupg/gpg-agent.env
-
 # clean up old inconsolata fonts
 rm -f ~/.fonts/Inconsolata*
 rm -f ~/.fonts.conf.d/10-powerline-symbols.conf
+
+# clean up old Xmodmap file
+rm -f ~/.Xmodmap
 
 # PROCESSING CODE ==============================================================
 for dir in $overwrite_dirs; do
@@ -69,4 +67,3 @@ done
 # POSTINSTALL ==================================================================
 tic xterm-256color.terminfo
 tic screen-256color.terminfo
-xmodmap ~/.Xmodmap 2> /dev/null && true # will cause errors if already loaded

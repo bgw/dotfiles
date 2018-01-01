@@ -1,4 +1,0 @@
-! Make caps-lock a second escape key
-! Loaded for xfce, ignored by gnome (which can be set differently)
-remove Lock = Caps_Lock
-keysym Caps_Lock = Escape
