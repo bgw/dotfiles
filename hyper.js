@@ -88,6 +88,7 @@ module.exports = {
     `,
     termCSS: '', // here for legacy reasons
     padding: 'none',
+    selectionColor: 'rgba(74, 144, 217, 0.3)',
 
     showHamburgerMenu: false,
     showWindowControls: true, // native decorations override this anyways
@@ -131,7 +132,6 @@ module.exports = {
   // format: [@org/]project[#version]
   plugins: [
     'hyper-native-window-decoration',
-    'hyper-shift-select',
   ],
 
   // ~/.hyper_plugins/local/
