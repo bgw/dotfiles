@@ -15,6 +15,8 @@ set hlsearch
 highlight Search ctermbg=00 ctermfg=03 cterm=underline
 highlight VertSplit ctermbg=232 ctermfg=232
 highlight LineNr ctermbg=235 ctermfg=08
+" workaround for https://github.com/zeit/hyper/issues/2592
+highlight Normal ctermbg=none
 set encoding=utf-8
 
 " ALE
