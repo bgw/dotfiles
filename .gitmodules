@@ -109,3 +109,6 @@
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = git://github.com/w0rp/ale.git
+[submodule "vim/bundle/typescript"]
+	path = vim/bundle/typescript
+	url = git://github.com/leafgarland/typescript-vim.git
