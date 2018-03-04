@@ -93,6 +93,10 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
 
+" Webpack watcher workaround
+" https://github.com/webpack/webpack/issues/781
+set backupcopy=yes
+
 " ctrlp options for working with large projects
 " https://github.com/FelikZ/ctrlp-py-matcher/blob/master/doc/pymatcher.txt
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
