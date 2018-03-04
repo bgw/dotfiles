@@ -31,6 +31,9 @@ path_append "$ANDROID_SDK/platform-tools"
 path_append "$HOME/opt/gradle/bin"
 path_append "$HOME/opt/buck/bin"
 
+# rust
+path_append "$HOME/.cargo/bin"
+
 # disable ~/.lesshst (potential data leakage)
 export LESSHISTFILE=/dev/null
 
