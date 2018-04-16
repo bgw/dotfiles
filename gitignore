@@ -1,2 +1,3 @@
-.*.swp
+.*.sw[a-p]
+.sw[a-p]
 .vimrc
