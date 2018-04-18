@@ -22,7 +22,7 @@ const base16 = {
 
 module.exports = {
   config: {
-    updateChannel: 'canary',
+    updateChannel: 'stable',
 
     fontSize: 12,
     fontFamily: '"Knack Nerd Font", Hack',
