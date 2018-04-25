@@ -112,3 +112,6 @@
 [submodule "vim/bundle/typescript"]
 	path = vim/bundle/typescript
 	url = git://github.com/leafgarland/typescript-vim.git
+[submodule "zsh/bundle/pure"]
+	path = zsh/bundle/pure
+	url = git://github.com/sindresorhus/pure.git
