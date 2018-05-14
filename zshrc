@@ -2,7 +2,6 @@ plugins=(
     adb
     autojump
     colored-man-pages
-    git
     mosh
     npm
     systemd
