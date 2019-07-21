@@ -7,8 +7,6 @@ plugins=(
     systemd
     tmux
     vagrant
-    vi-mode
-    virtualenv
     yarn
 )
 
