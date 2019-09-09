@@ -7,6 +7,8 @@ export EDITOR=vim
 bindkey -v
 KEYTIMEOUT=1
 bindkey -M vicmd '/' history-incremental-search-backward
+bindkey "^R" history-incremental-search-backward
+bindkey -v '^?' backward-delete-char
 
 # Keep 5000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=5000
