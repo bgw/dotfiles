@@ -1,3 +1,4 @@
 .*.sw[a-p]
 .sw[a-p]
 .vimrc
+.env/
