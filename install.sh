@@ -41,8 +41,10 @@ rm -rf ~/bin
 cp -r bin ~/bin
 
 # clean up old inconsolata fonts
-rm -f ~/.fonts/Inconsolata*
-rm -f ~/.fonts.conf.d/10-powerline-symbols.conf
+if [[ -d ~/.fonts ]]; then
+    rm -f ~/.fonts/Inconsolata*
+    rm -f ~/.fonts.conf.d/10-powerline-symbols.conf
+fi
 
 # clean up old Xmodmap file
 rm -f ~/.Xmodmap
