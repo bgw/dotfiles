@@ -5,12 +5,8 @@
 
 # files that simply need to be prepended with a dot and put in $HOME
 simple_files=(
-    ackrc
-    config/redshift.conf
-    ghci
     gitconfig
     gitignore
-    hyper.js
     npmrc
     profile
     quiltrc-dpkg
@@ -22,7 +18,6 @@ simple_files=(
 
 # directories that should be overwritten (or created)
 overwrite_dirs=(
-    config/mpDris2
     config/nvim
     config/pipeep-common
     config/powerline
@@ -46,8 +41,12 @@ if [[ -d ~/.fonts ]]; then
     rm -f ~/.fonts.conf.d/10-powerline-symbols.conf
 fi
 
-# clean up old Xmodmap file
+# clean up old and dead config files
 rm -f ~/.Xmodmap
+rm -f ~/.ackrc
+rm -f ~/.config/redshift.conf
+rm -f ~/.ghci
+rm -f ~/.hyper.js
 
 # PROCESSING CODE ==============================================================
 for dir in $overwrite_dirs; do
