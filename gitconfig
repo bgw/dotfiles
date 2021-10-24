@@ -4,6 +4,8 @@
 [core]
     editor = vim
     excludesfile = ~/.gitignore
+[pull]
+    ff = only
 [push]
     default = simple
 [alias]
