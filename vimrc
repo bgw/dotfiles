@@ -1,6 +1,3 @@
-" Enable pathogen
-call pathogen#infect()
-
 " Run vim-sensible first so we can override it as needed
 runtime! plugin/sensible.vim
 

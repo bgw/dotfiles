@@ -1,14 +1,14 @@
 [submodule "vim/bundle/supertab"]
-	path = vim/bundle/supertab
+	path = vim/pack/plugins/start/supertab
 	url = git://github.com/ervandew/supertab.git
 [submodule "vim/bundle/coffeescript"]
-	path = vim/bundle/coffeescript
+	path = vim/pack/plugins/start/coffeescript
 	url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "vim/bundle/solarized"]
-	path = vim/bundle/solarized
+	path = vim/pack/plugins/start/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/ctrlp"]
-	path = vim/bundle/ctrlp
+	path = vim/pack/plugins/start/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
 [submodule "bin/ddg_data"]
 	path = bin/ddg_data
@@ -17,37 +17,37 @@
 	path = config/pipeep-common/powerline
 	url = git://github.com/Lokaltog/powerline.git
 [submodule "vim/bundle/sudo"]
-	path = vim/bundle/sudo
+	path = vim/pack/plugins/start/sudo
 	url = git://github.com/vim-scripts/sudo.vim.git
 [submodule "vim/bundle/localvimrc"]
-	path = vim/bundle/localvimrc
+	path = vim/pack/plugins/start/localvimrc
 	url = git://github.com/MarcWeber/vim-addon-local-vimrc.git
 [submodule "vim/bundle/hasksyn"]
-	path = vim/bundle/hasksyn
+	path = vim/pack/plugins/start/hasksyn
 	url = git://github.com/travitch/hasksyn.git
 [submodule "vim/bundle/sensible"]
-	path = vim/bundle/sensible
+	path = vim/pack/plugins/start/sensible
 	url = git://github.com/tpope/vim-sensible.git
 [submodule "vim/bundle/html5"]
-	path = vim/bundle/html5
+	path = vim/pack/plugins/start/html5
 	url = git://github.com/othree/html5.vim.git
 [submodule "vim/bundle/jade"]
-	path = vim/bundle/jade
+	path = vim/pack/plugins/start/jade
 	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "vim/bundle/editorconfig"]
-	path = vim/bundle/editorconfig
+	path = vim/pack/plugins/start/editorconfig
 	url = git://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/bundle/emmet"]
-	path = vim/bundle/emmet
+	path = vim/pack/plugins/start/emmet
 	url = https://github.com/mattn/emmet-vim
 [submodule "vim/bundle/avr-syntax"]
 	path = vim/bundle/avr-syntax
 	url = git://github.com/vim-scripts/avr.vim.git
 [submodule "vim/bundle/ansible-yaml"]
-	path = vim/bundle/ansible-yaml
+	path = vim/pack/plugins/start/ansible-yaml
 	url = git://github.com/chase/vim-ansible-yaml.git
 [submodule "vim/bundle/tagbar"]
-	path = vim/bundle/tagbar
+	path = vim/pack/plugins/start/tagbar
 	url = git://github.com/majutsushi/tagbar.git
 [submodule "zsh/bundle/oh-my-zsh"]
 	path = zsh/bundle/oh-my-zsh
@@ -59,46 +59,46 @@
 	path = config/base16/shell
 	url = git://github.com/chriskempson/base16-shell.git
 [submodule "vim/bundle/base16"]
-	path = vim/bundle/base16
+	path = vim/pack/plugins/start/base16
 	url = git://github.com/chriskempson/base16-vim.git
 [submodule "vim/bundle/pandoc-syntax"]
-	path = vim/bundle/pandoc-syntax
+	path = vim/pack/plugins/start/pandoc-syntax
 	url = git://github.com/vim-pandoc/vim-pandoc-syntax.git
 [submodule "vim/bundle/pandoc"]
-	path = vim/bundle/pandoc
+	path = vim/pack/plugins/start/pandoc
 	url = git://github.com/vim-pandoc/vim-pandoc.git
 [submodule "vim/bundle/salt"]
-	path = vim/bundle/salt
+	path = vim/pack/plugins/start/salt
 	url = git://github.com/saltstack/salt-vim.git
 [submodule "vim/bundle/jsx"]
-	path = vim/bundle/jsx
+	path = vim/pack/plugins/start/jsx
 	url = git://github.com/mxw/vim-jsx.git
 [submodule "vim/bundle/sleuth"]
-	path = vim/bundle/sleuth
+	path = vim/pack/plugins/start/sleuth
 	url = git://github.com/tpope/vim-sleuth.git
 [submodule "vim/bundle/ctrlp-py-matcher"]
-	path = vim/bundle/ctrlp-py-matcher
+	path = vim/pack/plugins/start/ctrlp-py-matcher
 	url = git://github.com/FelikZ/ctrlp-py-matcher.git
 [submodule "vim/bundle/javascript-indent"]
 	path = vim/bundle/javascript-indent
 	url = git://github.com/rschmukler/pangloss-vim-indent.git
 [submodule "vim/bundle/javascript"]
-	path = vim/bundle/javascript
+	path = vim/pack/plugins/start/javascript
 	url = git://github.com/pangloss/vim-javascript.git
 [submodule "vim/bundle/jinja"]
-	path = vim/bundle/jinja
+	path = vim/pack/plugins/start/jinja
 	url = git://github.com/lepture/vim-jinja.git
 [submodule "vim/bundle/airline"]
-	path = vim/bundle/airline
+	path = vim/pack/plugins/start/airline
 	url = git://github.com/vim-airline/vim-airline.git
 [submodule "vim/bundle/airline-themes"]
-	path = vim/bundle/airline-themes
+	path = vim/pack/plugins/start/airline-themes
 	url = git://github.com/vim-airline/vim-airline-themes.git
 [submodule "vim/bundle/ale"]
-	path = vim/bundle/ale
+	path = vim/pack/plugins/start/ale
 	url = git://github.com/w0rp/ale.git
 [submodule "vim/bundle/typescript"]
-	path = vim/bundle/typescript
+	path = vim/pack/plugins/start/typescript
 	url = git://github.com/leafgarland/typescript-vim.git
 [submodule "zsh/bundle/pure"]
 	path = zsh/bundle/pure
