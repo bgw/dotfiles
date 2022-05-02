@@ -103,3 +103,6 @@
 [submodule "zsh/bundle/pure"]
 	path = zsh/bundle/pure
 	url = git://github.com/sindresorhus/pure.git
+[submodule "config/nvim/pack/plugins/start/nvim-lspconfig"]
+	path = config/nvim/pack/plugins/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
