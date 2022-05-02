@@ -3,6 +3,7 @@ runtime! plugin/sensible.vim
 
 " Styling
 set t_Co=256 " I like colors!
+set termguicolors
 set t_ut= " disable background color erase
 colorscheme base16-default-dark
 let g:airline_theme='base16_default'

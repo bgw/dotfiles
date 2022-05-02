@@ -52,15 +52,9 @@
 [submodule "zsh/bundle/oh-my-zsh"]
 	path = zsh/bundle/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "config/base16/gnome-terminal"]
-	path = config/base16/gnome-terminal
-	url = https://github.com/chriskempson/base16-gnome-terminal.git
-[submodule "config/base16/shell"]
-	path = config/base16/shell
-	url = https://github.com/chriskempson/base16-shell.git
 [submodule "vim/bundle/base16"]
 	path = vim/pack/plugins/start/base16
-	url = https://github.com/chriskempson/base16-vim.git
+	url = https://github.com/fnune/base16-vim.git
 [submodule "vim/bundle/pandoc-syntax"]
 	path = vim/pack/plugins/start/pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
