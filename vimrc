@@ -13,8 +13,6 @@ set hlsearch
 highlight Search ctermbg=00 ctermfg=03 cterm=underline
 highlight VertSplit ctermbg=232 ctermfg=232
 highlight LineNr ctermbg=235 ctermfg=08
-" workaround for https://github.com/zeit/hyper/issues/2592
-highlight Normal ctermbg=none
 set encoding=utf-8
 
 " ALE
@@ -40,8 +38,6 @@ highlight ColorColumn ctermbg=235
 
 " Let us use the mouse inside gnome-terminal
 set mouse=a
-" Let us use the system clipboard
-vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
 
 " Custom commands
 command StripEOL %s/\s\+\n/\r/g
@@ -90,10 +86,6 @@ let g:pandoc#modules#enabled = [
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
-
-" Webpack watcher workaround
-" https://github.com/webpack/webpack/issues/781
-set backupcopy=yes
 
 " ctrlp options for working with large projects
 let g:ctrlp_lazy_update = 350
