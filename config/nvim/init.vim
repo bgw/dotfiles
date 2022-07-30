@@ -8,19 +8,38 @@ local lspconfig = require('lspconfig')
 local configs = require('lspconfig.configs')
 local util = require('lspconfig.util')
 
-local lsp_attach = function(client)
-  vim.api.nvim_buf_set_keymap(0, "n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", {})
-  vim.api.nvim_buf_set_keymap(0, "n", "gD", "<Cmd>lua vim.lsp.buf.implementation()<CR>", {})
-  vim.api.nvim_buf_set_keymap(0, "n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", {})
-  vim.api.nvim_buf_set_keymap(0, "n", "Q", "<Cmd>lua vim.lsp.buf.formatting()<CR>", {})
-  vim.api.nvim_buf_set_option(0, "formatexpr", "v:lua.vim.lsp.formatexpr()")
-  vim.api.nvim_buf_set_option(0, "omnifunc", "v:lua.vim.lsp.omnifunc")
+local lsp_attach = function(client, bufnr)
+  -- jump to xyz
+  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
+  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
+  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+
+  -- other keybinds
+  vim.keymap.set('n', 'Q', vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+
+  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  vim.api.nvim_buf_set_option(bufnr, 'formatexpr', 'v:lua.vim.lsp.formatexpr')
 end
 
 lspconfig.rust_analyzer.setup{
   on_attach = lsp_attach,
   handlers = {
     ['window/showStatus'] = vim.lsp.handlers['window/showMessage'],
+  },
+  settings = {
+    ['rust-analyzer'] = {
+      procMacro = {
+        enable = false,
+      },
+      diagnostics = {
+        disabled = {
+          'unresolved-proc-macro',
+        },
+      },
+    },
   },
 }
 EOF
