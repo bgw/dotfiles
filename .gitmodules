@@ -9,7 +9,7 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/ctrlp"]
 	path = vim/pack/plugins/start/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bin/ddg_data"]
 	path = bin/ddg_data
 	url = https://github.com/justinls/ddg.git
@@ -70,9 +70,6 @@
 [submodule "vim/bundle/sleuth"]
 	path = vim/pack/plugins/start/sleuth
 	url = https://github.com/tpope/vim-sleuth.git
-[submodule "vim/bundle/ctrlp-py-matcher"]
-	path = vim/pack/plugins/start/ctrlp-py-matcher
-	url = https://github.com/FelikZ/ctrlp-py-matcher.git
 [submodule "vim/bundle/javascript-indent"]
 	path = vim/bundle/javascript-indent
 	url = https://github.com/rschmukler/pangloss-vim-indent.git

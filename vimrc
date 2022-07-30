@@ -96,11 +96,12 @@ let g:jsx_ext_required = 0
 set backupcopy=yes
 
 " ctrlp options for working with large projects
-" https://github.com/FelikZ/ctrlp-py-matcher/blob/master/doc/pymatcher.txt
-let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_lazy_update = 350
 let g:ctrlp_max_files = 0
-if executable("ag")
+if executable("rg")
+    set grepprg=rg\ --no-heading\ --color=never
+    let g:ctrlp_user_command = 'cd %s && rg --files --color=never --glob "" --iglob "!node_modules"'
+elseif executable("ag")
     set grepprg=ag\ --nogroup\ --nocolor
     let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --ignore ''.git'' --ignore ''.DS_Store'' --ignore ''node_modules'' --hidden -g ""'
 endif
