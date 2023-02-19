@@ -28,6 +28,7 @@ export ANDROID_HOME="$HOME/opt/android-sdk"
 export ANDROID_SDK="$ANDROID_HOME"
 path_append "$ANDROID_SDK/tools"
 path_append "$ANDROID_SDK/platform-tools"
+path_append "$ANDROID_SDK/cmdline-tools/latest/bin"
 path_append "$HOME/opt/gradle/bin"
 path_append "$HOME/opt/buck/bin"
 
