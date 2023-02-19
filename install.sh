@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 # A simple installer for the dotfiles
 
+set -eux
+set -o pipefail
+
 # CONFIGURABLES ================================================================
 
 # files that simply need to be prepended with a dot and put in $HOME
@@ -47,6 +50,10 @@ rm -f ~/.ackrc
 rm -f ~/.config/redshift.conf
 rm -f ~/.ghci
 rm -f ~/.hyper.js
+rm -f ~/.terminfo/{s/screen,x/xterm}-256color{,-italic}
+rmdir ~/.terminfo/s 2>/dev/null || true
+rmdir ~/.terminfo/x 2>/dev/null || true
+rmdir ~/.terminfo 2>/dev/null || true
 
 # PROCESSING CODE ==============================================================
 for dir in $overwrite_dirs; do
@@ -64,7 +71,3 @@ for file in $simple_files; do
     rm -f ~/."$file"
     cp "$file" ~/."$file"
 done
-
-# POSTINSTALL ==================================================================
-tic xterm-256color.terminfo
-tic screen-256color.terminfo
