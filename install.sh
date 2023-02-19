@@ -13,6 +13,7 @@ simple_files=(
     npmrc
     profile
     quiltrc-dpkg
+    tmux-powerlinerc
     tmux.conf
     vimrc
     zprofile
@@ -22,8 +23,8 @@ simple_files=(
 # directories that should be overwritten (or created)
 overwrite_dirs=(
     config/nvim
-    config/pipeep-common
-    config/powerline
+    config/bgw-common
+    config/tmux-powerline-themes
     vim
     zsh
 )
@@ -40,7 +41,7 @@ cp -r bin ~/bin
 
 # clean up old inconsolata fonts
 if [[ -d ~/.fonts ]]; then
-    rm -f ~/.fonts/Inconsolata*
+    rm -f ~/.fonts/Inconsolata*(N)
     rm -f ~/.fonts.conf.d/10-powerline-symbols.conf
 fi
 
@@ -54,6 +55,8 @@ rm -f ~/.terminfo/{s/screen,x/xterm}-256color{,-italic}
 rmdir ~/.terminfo/s 2>/dev/null || true
 rmdir ~/.terminfo/x 2>/dev/null || true
 rmdir ~/.terminfo 2>/dev/null || true
+rm -rf ~/.config/pipeep-common
+rm -rf ~/.config/powerline
 
 # PROCESSING CODE ==============================================================
 for dir in $overwrite_dirs; do
