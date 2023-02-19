@@ -12,7 +12,6 @@ simple_files=(
     gitignore
     npmrc
     profile
-    quiltrc-dpkg
     tmux-powerlinerc
     tmux.conf
     vimrc
@@ -57,6 +56,7 @@ rmdir ~/.terminfo/x 2>/dev/null || true
 rmdir ~/.terminfo 2>/dev/null || true
 rm -rf ~/.config/pipeep-common
 rm -rf ~/.config/powerline
+rm -f .quiltrc-dpkg
 
 # PROCESSING CODE ==============================================================
 for dir in $overwrite_dirs; do
