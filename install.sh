@@ -38,10 +38,11 @@ extended_dirs=(
 rm -rf ~/bin
 cp -r bin ~/bin
 
-# clean up old inconsolata fonts
+# clean up old inconsolata/hack/knack fonts
 if [[ -d ~/.fonts ]]; then
     rm -f ~/.fonts/Inconsolata*(N)
     rm -f ~/.fonts.conf.d/10-powerline-symbols.conf
+    rm -f ~/.fonts/Hack-*.ttf(N) ~/.fonts/Knack-*.ttf(N)
 fi
 
 # clean up old and dead config files
