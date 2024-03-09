@@ -1,6 +1,3 @@
-[submodule "bin/ddg_data"]
-	path = bin/ddg_data
-	url = https://github.com/justinls/ddg.git
 [submodule "zsh/bundle/oh-my-zsh"]
 	path = zsh/bundle/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
