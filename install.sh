@@ -14,7 +14,6 @@ simple_files=(
     profile
     tmux-powerlinerc
     tmux.conf
-    vimrc
     zprofile
     zshrc
 )
@@ -24,7 +23,6 @@ overwrite_dirs=(
     config/nvim
     config/bgw-common
     config/tmux-powerline-themes
-    vim
     zsh
 )
 

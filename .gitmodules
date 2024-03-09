@@ -1,99 +1,12 @@
-[submodule "vim/bundle/supertab"]
-	path = vim/pack/plugins/start/supertab
-	url = https://github.com/ervandew/supertab.git
-[submodule "vim/bundle/coffeescript"]
-	path = vim/pack/plugins/start/coffeescript
-	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/solarized"]
-	path = vim/pack/plugins/start/solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/ctrlp"]
-	path = vim/pack/plugins/start/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bin/ddg_data"]
 	path = bin/ddg_data
 	url = https://github.com/justinls/ddg.git
-[submodule "vim/bundle/sudo"]
-	path = vim/pack/plugins/start/sudo
-	url = https://github.com/vim-scripts/sudo.vim.git
-[submodule "vim/bundle/localvimrc"]
-	path = vim/pack/plugins/start/localvimrc
-	url = https://github.com/MarcWeber/vim-addon-local-vimrc.git
-[submodule "vim/bundle/hasksyn"]
-	path = vim/pack/plugins/start/hasksyn
-	url = https://github.com/travitch/hasksyn.git
-[submodule "vim/bundle/sensible"]
-	path = vim/pack/plugins/start/sensible
-	url = https://github.com/tpope/vim-sensible.git
-[submodule "vim/bundle/html5"]
-	path = vim/pack/plugins/start/html5
-	url = https://github.com/othree/html5.vim.git
-[submodule "vim/bundle/jade"]
-	path = vim/pack/plugins/start/jade
-	url = https://github.com/digitaltoad/vim-jade.git
-[submodule "vim/bundle/editorconfig"]
-	path = vim/pack/plugins/start/editorconfig
-	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "vim/bundle/emmet"]
-	path = vim/pack/plugins/start/emmet
-	url = https://github.com/mattn/emmet-vim
-[submodule "vim/bundle/avr-syntax"]
-	path = vim/bundle/avr-syntax
-	url = https://github.com/vim-scripts/avr.vim.git
-[submodule "vim/bundle/ansible-yaml"]
-	path = vim/pack/plugins/start/ansible-yaml
-	url = https://github.com/chase/vim-ansible-yaml.git
-[submodule "vim/bundle/tagbar"]
-	path = vim/pack/plugins/start/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "zsh/bundle/oh-my-zsh"]
 	path = zsh/bundle/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vim/bundle/base16"]
-	path = vim/pack/plugins/start/base16
-	url = https://github.com/fnune/base16-vim.git
-[submodule "vim/bundle/pandoc-syntax"]
-	path = vim/pack/plugins/start/pandoc-syntax
-	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
-[submodule "vim/bundle/pandoc"]
-	path = vim/pack/plugins/start/pandoc
-	url = https://github.com/vim-pandoc/vim-pandoc.git
-[submodule "vim/bundle/salt"]
-	path = vim/pack/plugins/start/salt
-	url = https://github.com/saltstack/salt-vim.git
-[submodule "vim/bundle/jsx"]
-	path = vim/pack/plugins/start/jsx
-	url = https://github.com/mxw/vim-jsx.git
-[submodule "vim/bundle/sleuth"]
-	path = vim/pack/plugins/start/sleuth
-	url = https://github.com/tpope/vim-sleuth.git
-[submodule "vim/bundle/javascript-indent"]
-	path = vim/bundle/javascript-indent
-	url = https://github.com/rschmukler/pangloss-vim-indent.git
-[submodule "vim/bundle/javascript"]
-	path = vim/pack/plugins/start/javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "vim/bundle/jinja"]
-	path = vim/pack/plugins/start/jinja
-	url = https://github.com/lepture/vim-jinja.git
-[submodule "vim/bundle/airline"]
-	path = vim/pack/plugins/start/airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim/bundle/airline-themes"]
-	path = vim/pack/plugins/start/airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes.git
-[submodule "vim/bundle/ale"]
-	path = vim/pack/plugins/start/ale
-	url = https://github.com/w0rp/ale.git
-[submodule "vim/bundle/typescript"]
-	path = vim/pack/plugins/start/typescript
-	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "zsh/bundle/pure"]
 	path = zsh/bundle/pure
 	url = https://github.com/sindresorhus/pure.git
-[submodule "config/nvim/pack/plugins/start/nvim-lspconfig"]
-	path = config/nvim/pack/plugins/start/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig.git
 [submodule "config/bgw-common/tmux-powerline"]
 	path = config/bgw-common/tmux-powerline
 	url = https://github.com/erikw/tmux-powerline.git

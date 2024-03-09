@@ -1,11 +1,5 @@
 # Tools for traversing the filesystem
 
-# Alias vless
-VLESS="/usr/share/vim/vimcurrent/macros/less.sh"
-if [ ! -z $VLESS ]; then
-    alias vless=$VLESS
-fi
-
 # Make less use -R by default
 alias less="less -R"
 
