@@ -4,6 +4,11 @@ vim.opt.colorcolumn = "+1"
 vim.opt.scrolloff = 2
 vim.opt.relativenumber = false
 vim.opt.conceallevel = 0
+vim.opt.title = true
+
+-- LazyVim defaults to the system clipboard, but wl-copy always opens a window,
+-- which is annoying, so only use the system clipboard when we ask for it.
+vim.opt.clipboard = ""
 
 vim.api.nvim_create_user_command("Strp", [[%s/\s\+\n/\r/g]], {})
 
