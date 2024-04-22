@@ -28,6 +28,6 @@ done
 autoload -U promptinit; promptinit
 prompt pure
 
-if [[ -f "~/.zshrc.local" ]]; then
-    source "~/.zshrc.local"
+if [[ -f ~/.zshrc.local ]]; then
+    source ~/.zshrc.local
 fi

@@ -54,6 +54,13 @@ export NODE_PATH="$NODE_PATH:$HOME/.npm-packages/lib/node_modules"
 # libvirt/virsh
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
+unset -f path_prepend
+unset -f path_append
+
+if [ -f "$HOME/.profile.local" ]; then
+    . "$HOME/.profile.local"
+fi
+
 # if running bash
 # TODO: Move to ~/.bash_profile
 if test -n "$BASH_VERSION"; then
@@ -62,6 +69,3 @@ if test -n "$BASH_VERSION"; then
         . "$HOME/.bashrc"
     fi
 fi
-
-unset -f path_prepend
-unset -f path_append
