@@ -11,6 +11,8 @@
 [alias]
     br = branch
     co = checkout
+    sw = switch
+    rt = restore
     df = diff
     diffstat = diff --stat
     ff = merge --ff-only
