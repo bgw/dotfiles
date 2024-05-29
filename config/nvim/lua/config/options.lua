@@ -5,6 +5,4 @@ vim.opt.scrolloff = 2
 vim.opt.relativenumber = false
 vim.opt.conceallevel = 0
 
-vim.lsp.inlay_hint = true
-
 vim.api.nvim_create_user_command("Strp", [[%s/\s\+\n/\r/g]], {})
