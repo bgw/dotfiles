@@ -6,3 +6,6 @@ vim.opt.relativenumber = false
 vim.opt.conceallevel = 0
 
 vim.api.nvim_create_user_command("Strp", [[%s/\s\+\n/\r/g]], {})
+
+vim.api.nvim_command("autocmd TermOpen * startinsert")
+vim.api.nvim_command("autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no")
