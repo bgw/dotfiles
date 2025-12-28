@@ -3,7 +3,7 @@ local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", lazypath })
   local savedir = vim.fn.chdir(lazypath)
-  vim.fn.system({ "git", "checkout", "7c493713bc2cb392706866eeba53aaef6c8e9fc6" })
+  vim.fn.system({ "git", "checkout", "306a05526ada86a7b30af95c5cc81ffba93fef97" })
   vim.fn.chdir(savedir)
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
