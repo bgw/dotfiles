@@ -14,3 +14,6 @@ vim.api.nvim_create_user_command("Strp", [[%s/\s\+\n/\r/g]], {})
 
 vim.api.nvim_command("autocmd TermOpen * startinsert")
 vim.api.nvim_command("autocmd TermOpen * setlocal nonumber norelativenumber signcolumn=no")
+
+vim.g.snacks_animate = false
+vim.g.lazyvim_prettier_needs_config = false
