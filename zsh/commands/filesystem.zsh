@@ -14,9 +14,11 @@ alias ls="ls --color=auto"
 alias sl=ls # yeah, I do this way too much
 
 # make cd perform ls, with truncation for long output
-cd() { builtin cd "$@" && _truncated_ls }
-popd() { builtin popd "$@" && _truncated_ls }
-pushd() { builtin pushd "$@" && _truncated_ls }
+if [[ ! -v CLAUDECODE ]]; then
+    cd() { builtin cd "$@" && _truncated_ls }
+    popd() { builtin popd "$@" && _truncated_ls }
+    pushd() { builtin pushd "$@" && _truncated_ls }
+fi
 
 # try to use gnu's version of ls, needed for --group-directories-first
 # on OS X, you'll need to run `brew install coreutils`
