@@ -3,3 +3,4 @@
 .vimrc
 .env/
 .bgw-project-root
+.claude/*.local.json
