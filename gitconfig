@@ -29,3 +29,5 @@
     date = relative
 [color]
     ui = auto
+[include]
+    path = .gitconfig.local
