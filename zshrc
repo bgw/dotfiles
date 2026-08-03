@@ -28,6 +28,10 @@ done
 autoload -U promptinit; promptinit
 prompt pure
 
+if command -v fnm >/dev/null; then
+  eval "$(fnm env --use-on-cd --shell zsh)"
+fi
+
 if [[ -f ~/.zshrc.local ]]; then
     source ~/.zshrc.local
 fi

@@ -8,6 +8,7 @@ set -o pipefail
 
 # files that simply need to be prepended with a dot and put in $HOME
 simple_files=(
+    bash_profile
     gitconfig
     gitignore
     npmrc
