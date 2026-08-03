@@ -17,3 +17,5 @@ vim.api.nvim_command("autocmd TermOpen * setlocal nonumber norelativenumber sign
 
 vim.g.snacks_animate = false
 vim.g.lazyvim_prettier_needs_config = false
+
+vim.g.root_spec = { ".bgw-project-root", "lsp", ".git", "cwd" }
