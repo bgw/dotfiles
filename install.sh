@@ -11,7 +11,6 @@ simple_files=(
     bash_profile
     gitconfig
     gitignore
-    npmrc
     profile
     tmux-powerlinerc
     tmux.conf
